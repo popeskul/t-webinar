@@ -1,0 +1,180 @@
+.header {
+  $block-name: &; // #{$block-name}__element {}
+  height: 262px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid #eaeaea;
+  @media(max-width: $screen-md) {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 60px;
+    padding-top: 0;
+    // margin-bottom: 0px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  &__container {
+    @include container-fixed;
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-lg;
+    }
+    @media(max-width: $screen-md) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__top {
+    //background-color: #fafbf5;
+    //padding-top: 42px;
+    //padding-bottom: 30px;
+    //padding-top: 23px;
+    //padding-bottom: 23px;
+    //height: 110px;
+    // margin-bottom: 33px;
+    @media(max-width: $screen-md) {
+      //display: table;
+      //width: 100%;
+      //padding: 0px 0px;
+      //height: 100%;
+      height: 60px;
+      margin-bottom: 0;
+    }
+    @media(max-width: $screen-sm) {}
+
+    .content__container,
+    .header__container {
+      @media(max-width: $screen-md) {
+        //display: table-cell;
+        //vertical-align: middle;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: $color-main;
+    height: 60px;
+    overflow: hidden;
+    @media(max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media(max-width: $screen-md) {
+      display: inline-block;
+      //margin-top: 10px;
+      margin-right: 16px;
+    }
+    @media(max-width: $screen-xs) {
+      //margin-top: 0;
+    }
+  }
+
+  &__content {
+    @media (max-width: $screen-md) {}
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 585px;
+    background-image: url(../img/header-background@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &__img1 {
+      position: absolute;
+      transform: translate(-0, -50%);
+      top: 65%;
+      right: -130px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background-image: linear-gradient(to bottom, #00abe0, #00abe0), linear-gradient(284deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.38));
+    }
+    &__img2 {
+      position: absolute;
+      bottom: -181px;
+      right: 276px;
+      width: 311px;
+      height: 311px;
+      border-radius: 50%;
+      background-image: linear-gradient(to bottom, #00abe0, #00abe0), linear-gradient(284deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.38));
+    }
+    &__img3 {
+      position: absolute;
+      top: -206px;
+      right: 235px;
+      width: 311px;
+      height: 311px;
+      border-radius: 50%;
+      background-image: linear-gradient(to bottom, #00abe0, #00abe0), linear-gradient(284deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.38));
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: top;
+    @media (max-width: $screen-md) {
+      font-size: 16px;
+    }
+    @media(max-width: $screen-xs) {
+      float: right;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-top: 2px;
+
+    & + * {
+      margin-top: 25px;
+    }
+
+    .head-h1 {
+      margin-bottom: 7px;
+    }
+  }
+
+  .navbar-collapse {
+    position: relative;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -24px;
+    @media (max-width: $screen-md) {
+      display: block;
+      justify-content: normal;
+      width: 100%;
+      position: relative;
+      margin-left: 0;
+      padding-top: 11px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__side {
+    float: right;
+  }
+}

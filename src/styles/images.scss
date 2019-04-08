@@ -1,0 +1,25 @@
+.logo {
+  width: 220px;
+  height: 55px;
+  @media(max-width: $screen-sm) {
+      width: 234px;
+      height: 17px;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {}
+  &--mini {
+      width: 234px;
+      height: 17px;
+  }
+}
+
+.digital-logo {
+  background: url(../img/breffi-digital-logo-grey.png);
+  width: 116px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+    background: url(../img/breffi-digital-logo-grey@2x.png);
+  }
+}

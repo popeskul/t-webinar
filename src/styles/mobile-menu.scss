@@ -1,0 +1,67 @@
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 294px;
+  min-height: 100vh;
+  background: #333333;
+
+  display: block !important;
+  height: 100%;
+  z-index: 100;
+  transition: right 0.1s; /** default on the right **/
+  overflow-y: hidden; /* makes the expanding nav scrollable */
+}
+
+.slideout-menu-left {
+  left: -294px;
+}
+
+.slideout-menu-right {
+  right: -294px;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open, .slideout-open body, .slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-panel {
+  transform: none !important;
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0);
+    transition: background-color cubic-bezier(.32,2,.55,.27);
+  }
+}
+
+.slideout-open {
+  .slideout-menu-left {
+    left: 0;
+  }
+
+  .slideout-menu-right {
+    right: 0;
+  }
+}
+
+.panel-open {
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    //background-color: rgba(0,0,0,.5);
+    background-color: transparent;
+    z-index: 99;
+  }
+}

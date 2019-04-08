@@ -1,0 +1,219 @@
+
+.nav {
+  font-size: 15px;
+
+  li {
+    float: left;
+
+    a {
+      color: white;
+      padding-left: 25px;
+      padding-top: 22px;
+      padding-right: 27px;
+      padding-bottom: 20px;
+      transition: none;
+
+      &:hover, &:focus {
+        opacity: 1;
+        background-color: #e0e9f0;
+        color: #00467f;
+        text-decoration: none;
+      }
+
+      &:hover {
+        .content-link {
+          border-bottom: 2px solid;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    &.content-link {
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        border-bottom: 1px solid black;
+      }
+    }
+
+    &.nav__circle {
+      .nav__circle__text {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 60px;
+        position: relative;
+
+        @media(max-width: $screen-md){
+          position: relative;
+        }
+      }
+
+      a {
+
+      }
+    }
+
+    &.active {
+      a {
+        background-color: #e0e9f0;
+        color: #00467f;
+
+        &:hover, &:focus {
+          background-color: #e0e9f0;
+          color: #00467f;
+        }
+
+        &:hover {
+          .content-link {
+            //border-color: $color-promo;
+          }
+        }
+      }
+    }
+
+    &.current {
+
+      a {
+        background-color: transparent;
+        color: white;
+        position: relative;
+
+        &:hover, &:focus {
+          background-color: transparent;
+          color: white;
+        }
+
+        &:before {
+          opacity: 0;
+          content: '';
+          position: absolute;
+          transform: translate(0%, -50%);
+          top: 50%;
+          left: 20px;
+          height: 30px;
+          width: 5px;
+          z-index: 1;
+          background-color: $color-main;
+
+          @media(max-width: $screen-md){
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.interest {
+      background-color: #6690b3;
+    }
+  }
+
+  &--header {
+    @media(max-width: $screen-md){
+      margin: 0px;
+      padding: 0;
+      width: 100%;
+    }
+
+    li {
+      position: relative;
+
+      @media(max-width: $screen-md){
+        width: 100%;
+      }
+
+      &:nth-last-child(1){
+        transition: opacity .05s ease-out;
+      }
+      &:nth-last-child(2){
+        transition: opacity .1s ease-out;
+      }
+      &:nth-last-child(3){
+        transition: opacity .2s ease-out;
+      }
+      &:nth-last-child(4){
+        transition: opacity .3s ease-out;
+      }
+      &:nth-last-child(5){
+        transition: opacity .4s ease-out;
+      }
+      &:nth-last-child(6){
+        transition: opacity .5s ease-out;
+      }
+
+      &:last-child {
+
+      }
+
+      &:first-child.current {
+        @media(max-width: $screen-md){
+          margin-top: -10px;
+        }
+
+        a {
+          @media(max-width: $screen-md){
+            padding-top: 31px;
+          }
+        }
+      }
+
+      a {
+        height: 60px;
+
+        @media(max-width: $screen-md){
+          height: auto;
+          font-size: 15px;
+          color: white;
+          padding: 21px 20px 20px 41px;
+          letter-spacing: 0.5px;
+        }
+
+        &:hover, &:focus {
+          .chart-gauge {
+            &__label {
+              fill: #256386;
+            }
+
+            &__primary {
+              stroke: #256386;
+            }
+          }
+        }
+      }
+
+      &.active {
+        &:before {
+          @media(max-width: $screen-md){
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: 20px;
+            width: 4px;
+            height: 30px;
+            background-color: $color-main;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &--none {
+    //overflow: hidden;
+    //white-space: nowrap;
+    //height: 60px;
+    //width: 0;
+    //margin: 0;
+    //opacity: 0;
+    pointer-events: none;
+
+    @media(max-width: $screen-md){
+      display: block;
+    }
+
+    li {
+      opacity: 0;
+    }
+  }
+}

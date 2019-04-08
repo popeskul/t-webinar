@@ -1,0 +1,36 @@
+.content {
+  // padding-top: 25px;
+  padding-bottom: 18px;
+
+  @media(max-width: $screen-sm){
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    @include container-fixed;
+
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-large-desktop;
+    }
+    @media(max-width: $screen-md){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &--main {
+    background-color: rgba(94, 138, 175, 0.5);
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media(max-width: $screen-sm){
+      padding-top: 20px;
+    }
+  }
+}

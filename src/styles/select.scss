@@ -1,0 +1,204 @@
+
+$width-default: 220px;
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+
+}
+
+.bootstrap-select {
+  border-radius: 0px;
+  border: none;
+
+  .dropdown-toggle {
+    padding: 18px 40px 13px 24px;
+    border-radius: 0px;
+    border: solid 2px $color-february;
+    font-size: 16px;
+    color: $color-simple !important;
+    background-color: $color-february;
+    text-align: left;
+
+    @media(max-width: $screen-md){
+      padding-top: 11px;
+      padding-bottom: 10px;
+    }
+
+    &:hover {
+      background-color: rgba(218, 229, 237, 0.5);
+      color: $color-simple !important;
+    }
+
+    &:focus {
+      outline: 0px auto -webkit-focus-ring-color !important;
+      background-color: $color-february;
+    }
+
+    &:active {
+      border-color: $color-february;
+    }
+
+    .caret {
+      position: absolute;
+      transform: translate(0%, -50%);
+      top: 50%;
+      right: 21px;
+      @include sprite($icon-dropdown);
+      border: none;
+      margin-top: 1px;
+    }
+
+    .filter-option {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .filter-option-inner {
+      padding: 0;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+    padding: 8px 0px 18px 0px;
+    box-shadow: none;
+    //border: none;
+    border: solid 2px $color-february;
+    border-top: none;
+    //border-top-color: transparent !important;
+    max-height: none !important;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0px;
+
+    @media(max-width: $screen-xs){
+      max-width: 100%;
+    }
+
+    li {
+      margin-bottom: 0px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        position: relative;
+        white-space: normal;
+        outline: none;
+        font-size: 17px;
+        padding: 8px 10px 8px 25px;
+        transition: none;
+        background-color: transparent;
+        color: $color-main;
+        border-radius: 0px;
+
+        &:hover {
+          opacity: 1;
+          background-color: $color-main;
+          color: white;
+        }
+
+        .check-mark {
+
+        }
+      }
+
+      .text {
+        margin-right: 0 !important;
+      }
+
+      &.selected {
+        a {
+          background-color: $color-main !important;
+          color: white;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+
+  .bs-actionsbox {
+    display: none;
+  }
+
+  &.show-menu-arrow {
+    .dropdown-toggle {
+      &:before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid white;
+        bottom: -14px;
+        left: 14px;
+      }
+
+      &:after {
+        display: none !important;
+      }
+    }
+  }
+
+  &.show-tick {
+    .dropdown-menu {
+      li {
+        a {
+          .check-mark {
+            position: absolute;
+            opacity: 0;
+            right: 11px !important;
+            top: 4px !important;
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 5px;
+            margin: 0;
+            background-color: transparent !important;
+            background-image: url(../icons/icon-x-white.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+
+        &.selected {
+          a {
+            .check-mark {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    .dropdown-toggle {
+      //background-color: #fff;
+      background-color: $color-february;
+      //color: $color-main;
+      border-color: $color-february !important;
+      border-bottom-color: transparent !important;
+      //background-color: $color-february;
+      //color: $color-simple !important;
+
+      &:hover, &:focus {
+        background-color: $color-february;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+
+      .caret {
+
+      }
+    }
+  }
+}

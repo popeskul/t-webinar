@@ -1,0 +1,308 @@
+@mixin percent-circle($diameter, $stroke-width, $fg-color, $bg-color) {
+
+  $percent: attr(data-percent);
+  $pi: 3.14159;
+  $circumference: $diameter * $pi;
+  $grey-color: rgba(255, 255, 255, 0.5);
+
+  // Make sure grey isn't white
+  @if ($grey-color == #ffffff) {
+    $grey-color: #efefef;
+  }
+
+  svg:before {
+    content: $grey-color;
+    display: block;
+  }
+
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  svg {
+    width: $diameter;
+    height: $diameter;
+    //the dash starts at 3 o'clock so we need to rotate it back
+    transform: rotate(-90deg);
+
+    .percent-circle-inner {
+      fill: $grey-color;
+      stroke: $fg-color;
+      stroke-width: $stroke-width * 2;
+      // this prop will get updated in js
+      stroke-dasharray: 0 $circumference;
+      transition: stroke-dasharray 0.6s ease-out;
+    }
+  }
+
+  &:after {
+    //write the percetage in straight from the data attribute
+    content: $percent '%';
+    display: block;
+    width: $diameter - $stroke-width * 2;
+    height: $diameter - $stroke-width * 2;
+    background: $bg-color;
+    position: absolute;
+    top: $stroke-width;
+    left: $stroke-width;
+    border-radius: 50%;
+    color: $fg-color;
+    text-align: center;
+    line-height: $diameter - ($stroke-width * 2);
+    //font-size: ($diameter * 0.2);
+    font-size: 18px;
+  }
+}
+
+.percent-circle {
+  &__wrapper {
+    position: absolute;
+    top: 5px;
+    right: 23px;
+  }
+
+  &--cabinet {
+    @include percent-circle(160px, 20px, $color-main, white);
+
+    &:after {
+      z-index: 0;
+      font-size: 26px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 150px;
+      height: 150px;
+      background: transparent;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 150px;
+      font-size: 18px;
+      border: 10px solid #E0D8CD;
+      z-index: -1;
+    }
+  }
+
+  &--middle {
+    @include percent-circle(125px, 6px, $color-main, white);
+    background-size: cover !important;
+    background-position: center !important;
+
+    &:after {
+      z-index: 0;
+      font-size: 40px;
+      color: white;
+      background-color: transparent;
+      opacity: 0.85;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 125px;
+      height: 125px;
+      background: transparent;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 125px;
+      font-size: 18px;
+      border: 6px solid #E0D8CD;
+      z-index: -1;
+    }
+  }
+}
+
+.pc1 {
+  @include percent-circle(200px, 40px, #01b2aa, #ffffff);
+}
+
+.pc2 {
+  @include percent-circle(300px, 60px, #ff9900, #ffffff);
+}
+
+.pc3 {
+  @include percent-circle(50px, 2px, white, $color-promo);
+}
+
+.simple-circle {
+  height: 42px;
+  width: 42px;
+  flex: 0 0 42px;
+  text-align: center;
+  border: 2px solid $color-february;
+  font-family: $trebuchet-bd;
+  color: $color-february;
+  border-radius: 50%;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+
+//
+.chart-gauge {
+  //font-size: 1.5rem;
+  font-size: 4.2rem;
+  text-anchor: middle;
+  width: 50px;
+  height: 50px;
+  //overflow: hidden;
+  stroke-linecap: round;
+  padding: 1px 1px;
+  overflow: visible !important;
+
+  @media(max-width: $screen-md){
+    width: 42px;
+    height: 42px;
+    padding: 1px 1px;
+  }
+
+  &__wrapper {
+    &--header {
+      position: absolute !important;
+      transform: translate(0%, -50%);
+      top: 50%;
+      right: 0px;
+
+      @media(max-width: $screen-md){
+        right: 7px;
+        margin-top: 3px;
+      }
+
+      .chart-gauge__primary {
+        stroke-width: 10px;
+      }
+    }
+
+    &--radius {
+      position: relative !important;
+      display: inline-block;
+      vertical-align: top;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
+  &__label {
+    fill: $color-main;
+  }
+
+  &__units {
+    font-size: .5em;
+    fill: black;
+  }
+
+  &__message {
+    font-size: .5em;
+    fill: #117733;
+  }
+
+  &__base {
+    fill: none;
+    stroke: #c4c4c4;
+    stroke-width: 1px;
+  }
+
+  &__primary {
+    fill: none;
+    stroke: $color-main;
+    stroke-width: 5px;
+    animation: load-gauge 1s linear forwards;
+  }
+
+  &__background {
+    width: 125px;
+    height: 127px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 4px;
+
+    &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-size: cover !important;
+      background-position: center !important;
+    }
+  }
+
+  &--light {
+    .chart-gauge {
+      &__label {
+        fill: white;
+      }
+
+      &__primary {
+        stroke: white;
+      }
+    }
+  }
+
+  &--big {
+    width: 153px;
+    height: 163px;
+    padding-right: 5px;
+
+    .chart-gauge {
+      &__label {
+        font-size: 20px;
+
+        &--mini {
+          font-size: 10px;
+        }
+      }
+
+      &__primary {
+        stroke-width: 14px;
+      }
+
+      &__base {
+        stroke-width: 7px;
+      }
+    }
+  }
+
+  &--middle {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 125px;
+    height: 127px;
+
+    .chart-gauge {
+      &__label {
+        font-size: 40px;
+        fill: white;
+        opacity: 0.85;
+      }
+
+      &__primary {
+        stroke-width: 6px;
+      }
+
+      &__base {
+        stroke-width: 0px;
+      }
+    }
+  }
+}
+
+
+@keyframes load-gauge {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

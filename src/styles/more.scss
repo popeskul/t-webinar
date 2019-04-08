@@ -1,0 +1,91 @@
+
+.read-more {
+  &__state {
+    display: none;
+  }
+
+  &__target {
+    //display: none;
+    //opacity: 0;
+    //max-height: 0;
+    //font-size: 0;
+    //transition: .25s ease;
+    height: 0;
+    overflow: hidden;
+    transition: .25s ease;
+  }
+
+  &__trigger {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #256386;
+    font-size: 15px;
+
+    @media(max-width: $screen-sm){
+      margin-top: 6px;
+      font-size: 13px;
+    }
+  }
+
+  &--cabinet {
+    margin-bottom: 25px;
+
+    @media(max-width: $screen-sm){
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.read-more__state:checked ~ .read-more__wrap .read-more__target {
+  //display: block;
+  //opacity: 1;
+  //font-size: inherit;
+  //max-height: 999em;
+  height: auto;
+}
+
+.read-more__state ~ .read-more__trigger:before {
+  content: 'Еще';
+}
+
+.read-more__state:checked ~ .read-more__trigger:before {
+  content: 'Меньше';
+}
+
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}

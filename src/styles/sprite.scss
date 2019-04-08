@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-check-blue-name: 'icon-check-blue';
+$icon-check-blue-x: 0px;
+$icon-check-blue-y: 83px;
+$icon-check-blue-offset-x: 0px;
+$icon-check-blue-offset-y: -83px;
+$icon-check-blue-width: 26px;
+$icon-check-blue-height: 26px;
+$icon-check-blue-total-width: 135px;
+$icon-check-blue-total-height: 129px;
+$icon-check-blue-image: '../img/sprite.png';
+$icon-check-blue: (0px, 83px, 0px, -83px, 26px, 26px, 135px, 129px, '../img/sprite.png', 'icon-check-blue', );
+$icon-check-blue-2x-name: 'icon-check-blue@2x';
+$icon-check-blue-2x-x: 83px;
+$icon-check-blue-2x-y: 0px;
+$icon-check-blue-2x-offset-x: -83px;
+$icon-check-blue-2x-offset-y: 0px;
+$icon-check-blue-2x-width: 52px;
+$icon-check-blue-2x-height: 52px;
+$icon-check-blue-2x-total-width: 135px;
+$icon-check-blue-2x-total-height: 129px;
+$icon-check-blue-2x-image: '../img/sprite.png';
+$icon-check-blue-2x: (83px, 0px, -83px, 0px, 52px, 52px, 135px, 129px, '../img/sprite.png', 'icon-check-blue@2x', );
+$icon-check-blue-3x-name: 'icon-check-blue@3x';
+$icon-check-blue-3x-x: 0px;
+$icon-check-blue-3x-y: 0px;
+$icon-check-blue-3x-offset-x: 0px;
+$icon-check-blue-3x-offset-y: 0px;
+$icon-check-blue-3x-width: 78px;
+$icon-check-blue-3x-height: 78px;
+$icon-check-blue-3x-total-width: 135px;
+$icon-check-blue-3x-total-height: 129px;
+$icon-check-blue-3x-image: '../img/sprite.png';
+$icon-check-blue-3x: (0px, 0px, 0px, 0px, 78px, 78px, 135px, 129px, '../img/sprite.png', 'icon-check-blue@3x', );
+$icon-check-name: 'icon-check';
+$icon-check-x: 31px;
+$icon-check-y: 83px;
+$icon-check-offset-x: -31px;
+$icon-check-offset-y: -83px;
+$icon-check-width: 26px;
+$icon-check-height: 26px;
+$icon-check-total-width: 135px;
+$icon-check-total-height: 129px;
+$icon-check-image: '../img/sprite.png';
+$icon-check: (31px, 83px, -31px, -83px, 26px, 26px, 135px, 129px, '../img/sprite.png', 'icon-check', );
+$icon-comments-name: 'icon-comments';
+$icon-comments-x: 106px;
+$icon-comments-y: 57px;
+$icon-comments-offset-x: -106px;
+$icon-comments-offset-y: -57px;
+$icon-comments-width: 19px;
+$icon-comments-height: 17px;
+$icon-comments-total-width: 135px;
+$icon-comments-total-height: 129px;
+$icon-comments-image: '../img/sprite.png';
+$icon-comments: (106px, 57px, -106px, -57px, 19px, 17px, 135px, 129px, '../img/sprite.png', 'icon-comments', );
+$icon-dropdown-name: 'icon-dropdown';
+$icon-dropdown-x: 87px;
+$icon-dropdown-y: 83px;
+$icon-dropdown-offset-x: -87px;
+$icon-dropdown-offset-y: -83px;
+$icon-dropdown-width: 18px;
+$icon-dropdown-height: 10px;
+$icon-dropdown-total-width: 135px;
+$icon-dropdown-total-height: 129px;
+$icon-dropdown-image: '../img/sprite.png';
+$icon-dropdown: (87px, 83px, -87px, -83px, 18px, 10px, 135px, 129px, '../img/sprite.png', 'icon-dropdown', );
+$icon-eye-name: 'icon-eye';
+$icon-eye-x: 62px;
+$icon-eye-y: 83px;
+$icon-eye-offset-x: -62px;
+$icon-eye-offset-y: -83px;
+$icon-eye-width: 20px;
+$icon-eye-height: 12px;
+$icon-eye-total-width: 135px;
+$icon-eye-total-height: 129px;
+$icon-eye-image: '../img/sprite.png';
+$icon-eye: (62px, 83px, -62px, -83px, 20px, 12px, 135px, 129px, '../img/sprite.png', 'icon-eye', );
+$icon-search-name: 'icon-search';
+$icon-search-x: 83px;
+$icon-search-y: 57px;
+$icon-search-offset-x: -83px;
+$icon-search-offset-y: -57px;
+$icon-search-width: 18px;
+$icon-search-height: 18px;
+$icon-search-total-width: 135px;
+$icon-search-total-height: 129px;
+$icon-search-image: '../img/sprite.png';
+$icon-search: (83px, 57px, -83px, -57px, 18px, 18px, 135px, 129px, '../img/sprite.png', 'icon-search', );
+$icon-views-name: 'icon-views';
+$icon-views-x: 0px;
+$icon-views-y: 114px;
+$icon-views-offset-x: 0px;
+$icon-views-offset-y: -114px;
+$icon-views-width: 14px;
+$icon-views-height: 15px;
+$icon-views-total-width: 135px;
+$icon-views-total-height: 129px;
+$icon-views-image: '../img/sprite.png';
+$icon-views: (0px, 114px, 0px, -114px, 14px, 15px, 135px, 129px, '../img/sprite.png', 'icon-views', );
+$spritesheet-width: 135px;
+$spritesheet-height: 129px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($icon-check-blue, $icon-check-blue-2x, $icon-check-blue-3x, $icon-check, $icon-comments, $icon-dropdown, $icon-eye, $icon-search, $icon-views, );
+$spritesheet: (135px, 129px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

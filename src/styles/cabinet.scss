@@ -1,0 +1,148 @@
+
+.promo-cabinet {
+  padding-top: 9px;
+  padding-bottom: 40px;
+
+  @media(max-width: $screen-md){
+    padding-top: 2px;
+    padding-bottom: 0;
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 0;
+
+    @media(max-width: $screen-md){
+      font-size: 33px;
+    }
+
+    &__wrapper {
+      margin-bottom: 40px;
+
+      @media (max-width: $screen-md){
+        margin-bottom: 36px;
+      }
+    }
+  }
+
+  &__exit {
+    width: 540px;
+    float: right;
+    margin-top: 13px;
+    font-size: 0;
+
+    @media (max-width: $screen-md){
+      width: auto;
+      margin-top: 9px;
+    }
+
+    &__btn {
+      float: left;
+    }
+
+    .btn {
+      padding-top: 9px;
+      padding-bottom: 8px;
+      vertical-align: top;
+
+      @media (max-width: $screen-md){
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      color: #3c4454;
+      padding-top: 4px;
+      padding-left: 161px;
+
+      @media (max-width: $screen-md){
+        display: none;
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 63px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__history {
+    padding-top: 12px;
+
+    @media (max-width: $screen-md){
+      padding-top: 0;
+    }
+
+    &__title {
+      margin-bottom: 33px;
+
+      @media (max-width: $screen-md){
+        margin-bottom: 22px;
+      }
+    }
+
+    .promo-cabinet {
+      &__block {
+
+      }
+    }
+
+    .btn {
+      min-width: 150px;
+    }
+  }
+
+  &__notification {
+    margin-top: 25px;
+
+    @media(max-width: $screen-sm){
+      margin-top: 19px;
+    }
+
+    &__group {
+      margin-bottom: 33px;
+
+      .promo-label {
+        margin-bottom: 34px;
+
+        @media(max-width: $screen-md){
+          padding-left: 38px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .promo-label {
+    padding-left: 40px;
+
+    @media(max-width: $screen-md){
+      margin-bottom: 28px;
+    }
+
+    span {
+      font-size: 15px;
+
+      @media(max-width: $screen-md){
+        font-size: 13px;
+      }
+    }
+  }
+
+  p {
+    @media(max-width: $screen-sm){
+      //font-size: 16px;
+      //line-height: 24px;
+    }
+  }
+}

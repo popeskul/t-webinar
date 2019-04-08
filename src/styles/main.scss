@@ -1,0 +1,43 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "../../bower_components/bootstrap-select/sass/bootstrap-select";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "mobile-menu";
+@import "sidr.dark";
+
+@import "mixins";
+@import "grids";
+@import "fonts";
+@import "sprite";
+@import "images";
+
+@import "default";
+@import "text";
+@import "button";
+@import "select";
+@import "form-elements";
+@import "nav";
+@import "circle";
+@import "scrollbar";
+
+@import "header";
+@import "footer";
+
+@import "search";
+@import "promo";
+@import "main-catalog";
+@import "tab";
+@import "order";
+@import "result";
+@import "content";
+@import "catalog";
+@import "cabinet";
+@import "more";
+@import "step";
+@import "breadcrumb";
+@import "burger";
+@import "slider";
+@import "mobile";
+
+@import "modal";
+@import "main-modal";
+@import "favourite-side";

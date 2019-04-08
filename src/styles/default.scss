@@ -1,0 +1,24 @@
+
+body {
+  min-height: 100%;
+  position: relative;
+  background-color: white;
+  font-family: $font-family-default;
+  min-width: 320px;
+  color: #001625;
+  font-size: 14px;
+  line-height: normal;
+
+  @media(max-width: $screen-md){
+    font-size: 13px;
+    padding-top: 60px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
