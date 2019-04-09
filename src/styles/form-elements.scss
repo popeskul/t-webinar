@@ -181,6 +181,8 @@ input {
       left: 3px;
       //@include sprite($icon-check-blue)
       background-image: url(../icons/check-blue.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
       width: 26px;
       height: 26px;
     }
@@ -337,4 +339,3 @@ input {
     transition: all .2s ease-in-out;
   }
 }
-

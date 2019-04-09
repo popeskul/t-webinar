@@ -99,7 +99,7 @@
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
   background-color: #999;
-  width: 11px;
+  width: 4px;
 }
 
 /* MS supports */
@@ -120,7 +120,8 @@
 .scrollbar {
   position: relative;
   width: 100%;
-  height: 380px;
+  // height: 380px;
+  max-height: 100%;
   overflow: auto;
   // background-color: #fff;
   // padding: 20px 30px 20px 20px;
@@ -151,16 +152,16 @@
 
   &:hover, &:focus {
     .ps__thumb-y {
-      background-color: $color-main;
+      background-color: #00abe0;
     }
   }
 
   .ps__thumb-y {
-    margin-right: -4px;
-    width: 8px;
+    margin-right: -2px;
+    width: 4px;
     height: 60px;
     border-radius: 4px;
-    background-color: $color-main;
+    background-color: #00abe0;
     opacity: 1;
   }
 }

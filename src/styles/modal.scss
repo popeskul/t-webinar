@@ -15,8 +15,9 @@
   }
 
   &--simple {
-    background-color: rgba(0, 70, 127, 0.88);
-    color: white;
+    // background-color: rgba(0, 70, 127, 0.88);
+    background-color: white;
+    // color: white;
 
     #{$block-name} {
       &-backdrop {
@@ -30,12 +31,17 @@
       }
 
       &-dialog {
-        max-width: 680px;
+        display: block;
+        height: auto;
+        max-width: 620px;
         width: 100%;
-        display: flex;
-        align-items: center;
-        height: 100%;
+        // display: flex;
+        // align-items: center;
+        // height: 100%;
         margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: none;
 
         @media(max-width: $screen-sm){
           margin: 0;
@@ -45,6 +51,10 @@
         @media(max-width: $screen-sm){
           height: auto;
           display: block;
+        }
+
+        &--full {
+
         }
       }
 
@@ -93,47 +103,6 @@
     }
   }
 
-  &--full {
-    background-color: white;
-    color: white;
-    padding: 0 !important;
-
-    #{$block-name} {
-      &-backdrop {
-
-      }
-
-      &-content {
-        background: transparent;
-        box-shadow: none;
-        border: none;
-        height: 100%;
-      }
-
-      &-dialog {
-        // max-width: 680px;
-        width: 100%;
-        // display: flex;
-        // align-items: center;
-        height: 100%;
-        margin: 0 auto;
-        @extend .container;
-        padding-left: 0;
-        padding-right: 0;
-
-        @media(max-width: $screen-sm){
-          margin: 0;
-          // padding: 63px 20px 63px 20px;
-          align-items: baseline;
-        }
-        @media(max-width: $screen-sm){
-          // height: auto;
-          display: block;
-        }
-      }
-    }
-  }
-
   &--side {
     #{$block-name} {
       opacity: 1;
@@ -154,13 +123,13 @@
       }
 
       &__close {
-        float: right;
-        line-height: normal;
-        opacity: 1;
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 0;
+        // float: right;
+        // line-height: normal;
+        // opacity: 1;
+        // display: block;
+        // position: absolute;
+        // top: 15px;
+        // right: 0;
         transition: opacity 0.2s linear, right 0.2s ease-out;
 
         @media(max-width: $screen-md){
@@ -168,17 +137,6 @@
           position: absolute;
           right: 0px;
           z-index: 2;
-        }
-
-        svg {
-          fill: white;
-          width: 35px;
-          height: 35px;
-
-          @media(max-width: $screen-md){
-            width: 32px;
-            height: 32px;
-          }
         }
 
         .btn {
@@ -196,7 +154,7 @@
         width: 897px;
         right: -100%;
         background-color: #fafbf5;
-        padding: 90px 195px 90px 82px;
+        padding: 60px 80px 60px 80px;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
