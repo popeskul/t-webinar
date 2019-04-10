@@ -154,6 +154,11 @@ input {
   font-weight: 400;
   cursor: pointer;
 
+  @media(max-width: $screen-md){
+    padding-left: 30px;
+    padding-top: 0;
+  }
+
   input[type="checkbox"]{
     position: absolute;
     transform: translate(0%, -50%);
@@ -191,6 +196,10 @@ input {
   span {
     font-size: 13px;
     color: #3c4454;
+
+    @media(max-width: $screen-md){
+      line-height: 18px;
+    }
 
     a {
       color: #3c4454;

@@ -10,15 +10,15 @@
     margin-bottom: 15px;
 
     @media(max-width: $screen-md){
-      font-size: 20px;
-      position: fixed;
-      z-index: 1;
-      top: 0px;
-      right: 0px;
-      width: 100%;
-      height: 90px;
-      background-color: #fafbf5;
-      padding: 15px 60px 10px 20px;
+      // font-size: 20px;
+      // position: fixed;
+      // z-index: 1;
+      // top: 0px;
+      // right: 0px;
+      // width: 100%;
+      // height: 90px;
+      // background-color: #fafbf5;
+      // padding: 15px 60px 10px 20px;
     }
 
     .modal__close {
@@ -30,13 +30,7 @@
   &__content {
     // height: 100%;
     @media(max-width: $screen-md){
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      width: 100%;
-      overflow-y: auto;
-      padding: 20px;
+
     }
   }
 
@@ -77,8 +71,22 @@
   &__item {
     display: flex;
 
+    @media(max-width: $screen-sm){
+      display: block;
+    }
+
     .simple-circle {
       margin-right: 20px;
+
+      @media(max-width: $screen-sm){
+        margin-bottom: 10px;
+      }
+    }
+
+    .head-h3 {
+      @media(max-width: $screen-sm){
+        font-size: 18px;
+      }
     }
   }
 

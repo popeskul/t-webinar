@@ -1,4 +1,8 @@
 .tab-promo {
+  @media(max-width: $screen-md) {
+    margin-bottom: 40px;
+  }
+  
   &__top {
     background-color: white;
     z-index: 2;
@@ -16,6 +20,10 @@
       transform: translate(0%, -50%);
       top: 50%;
       left: 0;
+
+      @media(max-width: $screen-md) {
+        display: none;
+      }
     }
 
     .nav-tabs {
@@ -67,10 +75,14 @@
   .tab-content {
     padding: 62px 0px 0px 0px;
 
+    @media(max-width: $screen-md) {
+      padding-top: 60px;
+    }
+
     p {
       margin-bottom: 0;
 
-      @media(min-width: $screen-md) {
+      @media(max-width: $screen-md) {
         line-height: 22px;
       }
     }

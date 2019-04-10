@@ -28,6 +28,18 @@
         background: transparent;
         box-shadow: none;
         border: none;
+
+        p {
+          // font-size: 16px;
+          // line-height: 24px;
+          margin-bottom: 29px;
+
+          @media(max-width: $screen-md){
+            font-size: 15px;
+            margin-bottom: 20px;
+            line-height: 22px;
+          }
+        }
       }
 
       &-dialog {
@@ -35,9 +47,6 @@
         height: auto;
         max-width: 620px;
         width: 100%;
-        // display: flex;
-        // align-items: center;
-        // height: 100%;
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -45,16 +54,12 @@
 
         @media(max-width: $screen-sm){
           margin: 0;
-          padding: 63px 20px 63px 20px;
+          padding: 24px 20px 24px 20px;
           align-items: baseline;
         }
         @media(max-width: $screen-sm){
           height: auto;
           display: block;
-        }
-
-        &--full {
-
         }
       }
 
@@ -62,20 +67,24 @@
         margin-bottom: 40px;
 
         @media(max-width: $screen-sm){
-          margin-bottom: 21px;
+          margin-bottom: 24px;
         }
       }
 
       &__button {
         padding-top: 11px;
 
+        @media(max-width: $screen-md){
+          padding-top: 37px;
+        }
+
         .btn {
           min-width: 256px;
           padding-top: 14px;
           padding-bottom: 13px;
 
-          @media(max-width: 600px){
-            min-width: 180px;
+          @media(max-width: $screen-md){
+            min-width: 220px;
             display: block;
             margin: 0 auto;
             margin-bottom: 17px;
@@ -87,18 +96,6 @@
             }
           }
         }
-      }
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 29px;
-
-      @media(max-width: $screen-sm){
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 20px;
       }
     }
   }
@@ -123,20 +120,10 @@
       }
 
       &__close {
-        // float: right;
-        // line-height: normal;
-        // opacity: 1;
-        // display: block;
-        // position: absolute;
-        // top: 15px;
-        // right: 0;
         transition: opacity 0.2s linear, right 0.2s ease-out;
 
         @media(max-width: $screen-md){
-          display: inline-block;
-          position: absolute;
-          right: 0px;
-          z-index: 2;
+
         }
 
         .btn {
@@ -162,16 +149,9 @@
         margin: 0;
 
         @media(max-width: $screen-md){
-          padding: 0;
-          width: 280px;
-        }
-
-        @media(max-width: 768px){
-          margin: 0px auto;
-        }
-        @media(max-width: $screen-sm){
-          width: 260px;
+          // width: 260px;
           width: 85%;
+          padding: 60px 20px 60px 20px;
           margin: 0;
         }
         @media(max-width: $screen-xs){
