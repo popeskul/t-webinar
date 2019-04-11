@@ -149,7 +149,7 @@ input {
   position: relative;
   display: inline-block;
   padding-top: 2px;
-  padding-left: 38px;
+  padding-left: 31px;
   min-height: 20px;
   font-weight: 400;
   cursor: pointer;
@@ -182,8 +182,8 @@ input {
       position: absolute;
       transform: translate(0, -50%);
       top: 50%;
-      margin-top: -8px;
-      left: 3px;
+      margin-top: -4px;
+      left: 2px;
       //@include sprite($icon-check-blue)
       background-image: url(../icons/check-blue.svg);
       background-repeat: no-repeat;

@@ -1,8 +1,10 @@
 .tab-promo {
+  margin-bottom: 66px;
+
   @media(max-width: $screen-md) {
     margin-bottom: 40px;
   }
-  
+
   &__top {
     background-color: white;
     z-index: 2;

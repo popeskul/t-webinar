@@ -9,10 +9,19 @@
   }
 
   &__title {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 
     @media(max-width: $screen-md) {
       margin-bottom: 12px;
+    }
+  }
+
+  &__description {
+    line-height: 22px;
+    margin-bottom: 23px;
+
+    &--bottom {
+      margin-bottom: 47px;
     }
   }
 
@@ -414,6 +423,11 @@
     color: #464645;
     border-bottom: 2px solid #464645;
     line-height: 12px;
+
+    &:hover, &:focus {
+      color: #464645;
+      border-color: rgba(70, 70, 69, 0.5);
+    }
   }
 }
 
@@ -464,11 +478,12 @@
   &__title {
     margin: 0;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 24px;
+    left: 31px;
     color: white;
-    max-width: 70%;
-    padding-left: 5px;
+    line-height: 30px;
+    max-width: 53%;
+    // padding-left: 5px;
 
     @media(max-width: $screen-md) {
       // margin-bottom: 20px;
@@ -481,23 +496,16 @@
 
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 5px;
-      background: $color-february;
-    }
-
     &__text {
       background-color: $color-february;
       display: inline;
+      background-color: $color-february;
+      padding: 0px 0px 5px 0px;
+      box-shadow: 10px 0 0 $color-february, -10px 0 0 $color-february;
 
       @media(max-width: $screen-md) {
-        padding-top: 2px;
-        padding-bottom: 2px;
+        // padding-top: 2px;
+        // padding-bottom: 2px;
       }
     }
   }
@@ -533,6 +541,7 @@
       #{$block-name} {
         &__block {
           @include make-xs-column(24);
+          @include make-sm-column(12);
           @include make-md-column(8);
           float: none !important;
 
@@ -548,8 +557,9 @@
         &__title {
           font-size: 14px;
           font-family: $trebuchet-bd;
-          left: 10px;
+          left: 20px;
           bottom: 10px;
+          line-height: 20px;
           // padding-left: 9px;
 
           &:before {
@@ -557,9 +567,10 @@
           }
 
           &__text {
-            padding-bottom: 3px;
-            padding-top: 3px;
-            line-height: 22px;
+            // padding-bottom: 3px;
+            // padding-top: 3px;
+            // line-height: 22px;
+            padding-top: 5px;
           }
         }
 
@@ -892,7 +903,7 @@
       padding-top: 2px;
       font-size: 14px;
       color: #3c4454;
-      text-transform: uppercase;
+      // text-transform: uppercase;
 
       @media(max-width: $screen-md) {
         // padding-top: 2px;
@@ -911,14 +922,15 @@
     }
 
     &__list {
+      display: flex;
       padding: 0;
       list-style: none;
       line-height: 17px;
       margin: 0;
 
       li {
-        display: inline-block;
-        vertical-align: middle;
+        display: flex;
+        align-items: center;
         margin-right: 21px;
 
         &:last-child {
@@ -964,7 +976,7 @@
 
       & > p {
         margin-top: 10px;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 18px !important;
       }
     }
@@ -997,10 +1009,10 @@
     }
 
     .btn {
-      max-width: 222px;
-      width: 100%;
-      font-size: 15px;
-      font-weight: bold;
+      min-width: 222px;
+      // width: 100%;
+      font-size: 16px;
+      // font-weight: bold;
       padding-top: 14px;
       padding-bottom: 13px;
       @media(max-width: $screen-md) {
@@ -1312,10 +1324,10 @@
     @include make-lg-column(14.0);
     flex: 1;
     padding-top: 1px;
-    margin-bottom: 83px;
+    margin-bottom: 42px;
     @media(max-width: $screen-md) {
       padding-top: 0;
-      margin-bottom: 60px;
+      // margin-bottom: 60px;
     }
     @media(max-width: $screen-sm) {
       margin-bottom: 40px;
@@ -1443,19 +1455,13 @@
         display: none;
       }
 
-      &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 5px;
-        background: $color-february;
-      }
-
       &__text {
         background-color: $color-february;
         display: inline;
+        display: inline;
+        background-color:  $color-february;
+        padding: 0px 0px 5px 0px;
+        box-shadow: 10px 0 0  $color-february, -10px 0 0  $color-february;
       }
     }
   }
@@ -1660,8 +1666,8 @@
 
   &__like {
     margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 8px;
 
     @media(max-width: $screen-sm) {
       border-top: 2px solid #eaeaea;
@@ -1670,7 +1676,7 @@
       margin-right: -20px;
       padding-right: 20px;
       padding-top: 11px;
-      margin-top: 15px;
+      // margin-top: 15px;
     }
 
     &--article {
@@ -1867,7 +1873,7 @@
 
   &:hover, &:focus {
     #{$block-name} {
-      opacity: 0.5;
+      opacity: 1;
     }
   }
 
@@ -1883,7 +1889,7 @@
     }
 
     li {
-      margin-right: 54px;
+      margin-right: 52px;
 
       @media(max-width: $screen-sm) {
         margin-right: 0;
@@ -1929,6 +1935,7 @@
     max-height: 18px;
     vertical-align: bottom;
     // fill: rgba(120, 120, 134, 0.5);
+    opacity: 0.5;
   }
 
   &__num {
