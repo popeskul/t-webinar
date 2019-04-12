@@ -209,7 +209,7 @@
       line-height: 23px;
       font-size: 18px;
       color: $color-summer;
-      font-weight: bold;
+      font-family: $verdana-bold;
     }
 
     p {
@@ -244,7 +244,6 @@
     line-height: 38px;
     font-size: 30px;
     color: $color-alpha;
-    // font-weight: bold;
 
     @media(max-width: $screen-sm){
       font-size: 20px;

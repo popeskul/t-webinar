@@ -30,9 +30,8 @@
         border: none;
 
         p {
-          // font-size: 16px;
-          // line-height: 24px;
-          margin-bottom: 29px;
+          margin-bottom: 26px;
+          line-height: 22px;
 
           @media(max-width: $screen-md){
             font-size: 15px;
@@ -64,10 +63,10 @@
       }
 
       &__title {
-        margin-bottom: 40px;
+        margin-bottom: 24px;
 
         @media(max-width: $screen-sm){
-          margin-bottom: 24px;
+          // margin-bottom: 24px;
         }
       }
 
@@ -138,7 +137,7 @@
         position: fixed;
         top: 0;
         height: 100%;
-        width: 897px;
+        width: 894px;
         right: -100%;
         background-color: white;
         padding: 63px 8px 60px 80px;

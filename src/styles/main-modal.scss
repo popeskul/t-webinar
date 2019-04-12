@@ -53,7 +53,7 @@
     font-size: 22px;
     line-height: 28px;
     color: $color-sky;
-    font-weight: bold;
+    font-family: $verdana-bold;
 
     @media(max-width: $screen-md) {
       font-size: 18px;
@@ -99,7 +99,7 @@
       font-size: 18px;
       color: $color-main;
       font-weight: 300;
-      font-style: italic;
+      font-family: $verdana-italic;
 
       @media(max-width: $screen-sm){
       }
@@ -214,7 +214,7 @@
       }
 
       u {
-        font-style: italic;
+        font-family: $verdana-italic;
         text-decoration: none;
         border-bottom: 1px solid rgb(94,138,175);
       }

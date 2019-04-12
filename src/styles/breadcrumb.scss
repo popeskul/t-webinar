@@ -4,6 +4,7 @@
   background-color: transparent;
   margin-top: 31px;
   margin-bottom: 0;
+  font-family: $verdana;
 
   @media(max-width: $screen-md){
     display: none;
@@ -13,6 +14,8 @@
   }
 
   li {
+    color: #464645;
+
     a {
       font-size: 14px;
       color: #464645;
@@ -31,7 +34,7 @@
     }
 
     &.active {
-      color: $color-deep;
+      color: #464645;
     }
   }
 }

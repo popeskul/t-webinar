@@ -70,7 +70,9 @@ $container-large-desktop:      940px + $grid-gutter-width;
 $container-lg:                 $container-large-desktop;
 
 $trebuchet-bd: "trebuch-bd";
-$verdana: "Verdana", sans-serif;
+$verdana-italic: 'Verdana-Italic';
+$verdana-bold: 'Verdana-Bold';
+$verdana: 'Verdana';
 
 $font-family-default: $verdana;
 
