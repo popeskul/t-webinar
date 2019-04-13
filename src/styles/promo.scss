@@ -1606,7 +1606,7 @@
 
       .quote-promo {
         margin-top: -4px;
-        margin-bottom: 18px;
+        // margin-bottom: 18px;
       }
     }
 
@@ -1683,7 +1683,7 @@
 
   &__like {
     margin-left: 100px;
-    margin-top: 0px;
+    margin-top: 18px;
     margin-bottom: 6px;
 
     @media(max-width: $screen-sm) {

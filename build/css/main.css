@@ -9208,8 +9208,7 @@ input {
           padding-bottom: 0px;
           border: none; } }
       .article__profile__wrapper .quote-promo {
-        margin-top: -4px;
-        margin-bottom: 18px; }
+        margin-top: -4px; }
     .article__profile__img {
       float: left;
       border-radius: 50%;
@@ -9260,7 +9259,7 @@ input {
       margin: 0 auto; }
   .article__like {
     margin-left: 100px;
-    margin-top: 0px;
+    margin-top: 18px;
     margin-bottom: 6px; }
     @media (max-width: 767px) {
       .article__like {
