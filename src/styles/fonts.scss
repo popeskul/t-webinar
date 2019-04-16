@@ -8,6 +8,14 @@
 }
 
 @font-face {
+	font-family: 'trebuch';
+	src: url('../fonts/trebuc.eot');
+	src: local('☺'), url('../fonts/trebuc.woff') format('woff'), url('../fonts/trebuc.ttf') format('truetype'), url('../fonts/trebuc.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Verdana-Italic';
 	src: url('../fonts/Verdana-Italic.eot');
 	src: local('☺'), url('../fonts/Verdana-Italic.woff') format('woff'), url('../fonts/Verdana-Italic.ttf') format('truetype'), url('../fonts/Verdana-Italic.svg') format('svg');

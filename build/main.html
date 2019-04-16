@@ -1,156 +1,122 @@
-<!doctype html>
+<!DOCTYPE doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/main.css">
-    <!--<script src="js/z_main.js"></script>-->
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/changeable-style.css">
 </head>
 <body>
 <main id="panel-body">
-  <div class="header header--big">
-      <div class="header__top">
-          <div class="header__container">
-              <div class="header__burger">
-                  <span class="mobile-menu" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-                      <span></span>
-                  </span>
-              </div>
-
-              <div class="header__logo">
-                  <a href="#">
-                      <img src="img/logo.svg" class="logo" alt="">
-                  </a>
-              </div>
-          </div>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__description">
+        <div class="head-h1">Слушаем и слышим</div>
+        <p class="">О респираторном с заботой о пациенте</p>
       </div>
-
-      <div class="header__slider">
-          <div class="header__slider__img" style="background: url(img/header.jpg)"></div>
+      <div class="header__logo">
+        <a href="#">
+          <img alt="" class="logo" src="img/logo.svg">
+          </img>
+        </a>
       </div>
+    </div>
+  
+    <div class="header__background"></div>
+  </div>
 
-      <nav class="navbar navbar-default navbar-static promo-mobile" id="navbar-example">
-          <div class="header__container">
-              <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
-                  <div class="header__nav">
-                      <ul class="nav nav--header">
-                          <li><a href="main.html"><span class="content-link">Главная</span></a></li>
-                          <li><a href="article-catalog.html"><span class="content-link">Календарь вебинаров</span></a></li>
-                          <li class="">
-                              <a href="#">
-                                  <span class="content-link">Запись вебинаров</span>
+  <div class="content content--main">
+      <div class="content__container">
+
+          <div class="promo-block">
+              <div class="head-h2 color--shine">Содержание:</div>
+
+              <div class="main-catalog">
+                  <div class="main-catalog__item main-catalog__item--first">
+                      <div class="main-catalog__box">
+                          <div class="main-catalog__header">
+                              <div class="main-catalog__main-img1">
+                                  <img src="icons/main-circle1.svg" style="position: absolute;
+    z-index: 1;" alt="">
+                                  <img src="img/main-catalog-img3.png" width="257px" class="dots" alt="">
+                                  <img src="img/question.png" class="question" alt="">
+                              </div>
+                          </div>
+
+                          <div class="main-catalog__description">
+                              <div class="main-catalog__title">Что такое крапивница?</div>
+
+                              <a href="#modal-main1"
+                                 class="main-catalog__button btn btn__promo"
+                                 data-toggle="modal">
+                                  Вспомнить
                               </a>
-                          </li>
-                          <li class="interest">
-                              <a href="#">
-                                  <span class="content-link">Регистрация</span>
-                              </a>
-                          </li>
-                          <li class="interest">
-                              <a href="#">
-                                  <span class="content-link">Вход</span>
-                              </a>
-                          </li>
-                      </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="main-catalog__item main-catalog__item--second">
+                      <div class="main-catalog__box">
+                          <div class="main-catalog__header">
+                              <div class="main-catalog__main-img2">
+                                  <img src="icons/main-circle2.svg" class="circle" alt="">
+                                  <img src="img/main-catalog-img2.png" width="270px" class="img" alt="">
+                              </div>
+
+                              <div class="main-catalog__title">Какие виды крапивницы бывают?</div>
+                          </div>
+
+                          <div class="main-catalog__description">
+                              <button type="button" class="main-catalog__button btn btn__promo" data-toggle="modal" data-target="#modal-main2">Повторить</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="main-catalog__item main-catalog__item--third">
+                      <div class="main-catalog__box">
+                          <div class="main-catalog__header">
+                              <div class="main-catalog__title">Терапия крапивницы у детей:</div>
+                              <p>мнение профессора</p>
+                          </div>
+
+                          <div class="main-catalog__description">
+                              <div class="main-catalog__doctor">
+                                  <div class="main-catalog__doctor__img">
+                                      <img src="img/doctor-img1.png" alt="">
+                                  </div>
+
+                                  <div class="main-catalog__doctor__description">
+                                      <div class="main-catalog__doctor__title">Блохин Борис Моисеевич</div>
+                                      <p>профессор</p>
+                                  </div>
+                              </div>
+                              <button type="button" class="main-catalog__button btn btn__promo" data-toggle="modal" data-target="#modal-main3">Смотреть</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="main-catalog__item main-catalog__item--fourth">
+                      <div class="main-catalog__box">
+                          <div class="main-catalog__header main-catalog__header--full">
+                              <img src="img/main-catalog-img1.png" alt="">
+                          </div>
+
+                          <div class="main-catalog__description">
+                              <div class="main-catalog__title">Данные клинических исследований в терапии крапивницы:</div>
+                              <p>не все препараты действуют одинаково</p>
+
+                              <button type="button" class="main-catalog__button btn btn__promo" data-toggle="modal" data-target="#modal-main4">Узнать</button>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
-      </nav>
+
+      </div>
   </div>
-
-<div class="content content--main">
-    <div class="content__container">
-
-        <div class="promo-block">
-            <div class="head-h2 color--shine">Содержание:</div>
-
-            <div class="main-catalog">
-                <div class="main-catalog__item main-catalog__item--first">
-                    <div class="main-catalog__box">
-                        <div class="main-catalog__header">
-                            <div class="main-catalog__main-img1">
-                                <img src="icons/main-circle1.svg" style="position: absolute;
-  z-index: 1;" alt="">
-                                <img src="img/main-catalog-img3.png" width="257px" class="dots" alt="">
-                                <img src="img/question.png" class="question" alt="">
-                            </div>
-                        </div>
-
-                        <div class="main-catalog__description">
-                            <div class="main-catalog__title">Что такое крапивница?</div>
-
-                            <a href="#modal-main1"
-                               class="main-catalog__button btn btn__promo"
-                               data-toggle="modal">
-                                Вспомнить
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main-catalog__item main-catalog__item--second">
-                    <div class="main-catalog__box">
-                        <div class="main-catalog__header">
-                            <div class="main-catalog__main-img2">
-                                <img src="icons/main-circle2.svg" class="circle" alt="">
-                                <img src="img/main-catalog-img2.png" width="270px" class="img" alt="">
-                            </div>
-
-                            <div class="main-catalog__title">Какие виды крапивницы бывают?</div>
-                        </div>
-
-                        <div class="main-catalog__description">
-                            <button type="button" class="main-catalog__button btn btn__promo" data-toggle="modal" data-target="#modal-main2">Повторить</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main-catalog__item main-catalog__item--third">
-                    <div class="main-catalog__box">
-                        <div class="main-catalog__header">
-                            <div class="main-catalog__title">Терапия крапивницы у детей:</div>
-                            <p>мнение профессора</p>
-                        </div>
-
-                        <div class="main-catalog__description">
-                            <div class="main-catalog__doctor">
-                                <div class="main-catalog__doctor__img">
-                                    <img src="img/doctor-img1.png" alt="">
-                                </div>
-
-                                <div class="main-catalog__doctor__description">
-                                    <div class="main-catalog__doctor__title">Блохин Борис Моисеевич</div>
-                                    <p>профессор</p>
-                                </div>
-                            </div>
-                            <button type="button" class="main-catalog__button btn btn__promo" data-toggle="modal" data-target="#modal-main3">Смотреть</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main-catalog__item main-catalog__item--fourth">
-                    <div class="main-catalog__box">
-                        <div class="main-catalog__header main-catalog__header--full">
-                            <img src="img/main-catalog-img1.png" alt="">
-                        </div>
-
-                        <div class="main-catalog__description">
-                            <div class="main-catalog__title">Данные клинических исследований в терапии крапивницы:</div>
-                            <p>не все препараты действуют одинаково</p>
-
-                            <button type="button" class="main-catalog__button btn btn__promo" data-toggle="modal" data-target="#modal-main4">Узнать</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
 
         <div class="footer">
             <div class="footer__container">
@@ -279,7 +245,7 @@
     </div>
     
     <div class="modal modal--simple fade" id="modal-intro1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="header">
+      <div class="header header--modal">
         <div class="header__container">
           <div class="header__description">
             <div class="head-h1">Слушаем и слышим</div>
@@ -293,7 +259,7 @@
           </div>
         </div>
     
-        <div class="header__background"></div>
+        <!-- <div class="header__background"></div> -->
       </div>
       <div class="modal-dialog modal-dialog--full">
         <div class="modal-content">
@@ -323,7 +289,7 @@
     </div>
     
     <div class="modal modal--simple fade" id="modal-intro2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="header">
+      <div class="header header--modal">
         <div class="header__container">
           <div class="header__description">
             <div class="head-h1">Слушаем и слышим</div>
@@ -337,7 +303,7 @@
           </div>
         </div>
     
-        <div class="header__background"></div>
+        <!-- <div class="header__background"></div> -->
       </div>
       <div class="modal-dialog modal-dialog--full">
         <div class="modal-content">

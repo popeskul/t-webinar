@@ -1,0 +1,54 @@
+.changeable-main .profile-promo__position {
+  color: #00abe0; }
+
+.changeable-main .tab-promo .nav-tabs li a {
+  border-color: #00abe0 !important; }
+
+.changeable-main .promo-article__time svg {
+  fill: #00abe0; }
+
+.changeable-main .promo-article__title__text {
+  background-color: #00abe0;
+  box-shadow: 10px 0 0 #00abe0, -10px 0 0 #00abe0; }
+  @media (max-width: 1040px) {
+    .changeable-main .promo-article__title__text {
+      box-shadow: 5px 0 0 #00abe0, -5px 0 0 #00abe0; } }
+
+.changeable-main .promo-article__profile__position {
+  color: #00abe0; }
+
+.changeable-main .promo-article__info__list svg {
+  fill: #00abe0; }
+
+.changeable-main .promo-article__banner__info {
+  border-color: #00abe0;
+  color: #00abe0; }
+
+.changeable-main .promo-article__banner__title {
+  color: #00abe0; }
+
+.changeable-main .footer__main a {
+  color: #00abe0; }
+
+.changeable-main .promo-label input[type="checkbox"]:checked + span:before {
+  background-image: url(../icons/check-blue.svg); }
+
+.changeable-main .simple-circle {
+  border-color: #00abe0;
+  color: #00abe0; }
+
+.changeable-main .ps__rail-y .ps__thumb-y {
+  background-color: #00abe0; }
+
+.changeable-main .modal-backdrop {
+  background-color: #00abe0; }
+
+.changeable-main .article__time svg {
+  fill: #00abe0; }
+
+.changeable-main .article__pormo-img__title__text {
+  background-color: #00abe0;
+  box-shadow: 10px 0 0 #00abe0, -10px 0 0 #00abe0; }
+
+.changeable-main .article__pormo-img__play svg {
+  fill: #00abe0; }

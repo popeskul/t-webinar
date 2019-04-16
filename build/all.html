@@ -1,70 +1,60 @@
 <!DOCTYPE doctype html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
-  <title>
-  </title>
+  <title></title>
   <meta content="" name="description">
   <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="css/main.css" rel="stylesheet">
-  <!--<script src="js/z_main.js"></script>-->
-  </link>
-  </link>
-  </meta>
-  </meta>
-  </meta>
-  </meta>
+  <link rel="stylesheet" href="css/changeable-style.css">
 </head>
-
-<body>
-  <main id="panel-body">
-    <div class="header">
-      <div class="header__container">
-        <div class="header__description">
-          <div class="head-h1">Слушаем и слышим</div>
-          <p class="">О респираторном с заботой о пациенте</p>
-        </div>
-        <div class="header__logo">
-          <a href="#">
-            <img alt="" class="logo" src="img/logo.svg">
-            </img>
-          </a>
-        </div>
+<body class="changeable-main">
+<main id="panel-body">
+  <div class="header">
+    <div class="header__container">
+      <div class="header__description">
+        <div class="head-h1">Слушаем и слышим</div>
+        <p class="">О респираторном с заботой о пациенте</p>
       </div>
-
-      <div class="header__background"></div>
+      <div class="header__logo">
+        <a href="#">
+          <img alt="" class="logo" src="img/logo.svg">
+          </img>
+        </a>
+      </div>
     </div>
+  
+    <div class="header__background"></div>
+  </div>
 
-<div class="content">
-    <div class="content__container">
-        <ul style="list-style: none;">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="index-message.html">Главная сообщение</a>
-            </li>
-            <li>
-                <a href="article-result.html">Запись вебинара</a>
-            </li>
-            <li>
-                <a href="article-result-text.html">Запись вебинара - text</a>
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-        </ul>
+  <div class="content">
+      <div class="content__container">
+          <ul style="list-style: none;">
+              <li>
+                  <a href="index.html">Главная</a>
+              </li>
+              <li>
+                  <a href="index-message.html">Главная сообщение</a>
+              </li>
+              <li>
+                  <a href="article-result.html">Запись вебинара</a>
+              </li>
+              <li>
+                  <a href="article-result-text.html">Запись вебинара - text</a>
+              </li>
+              <li>
+                  <a href="catalog.html">Каталог</a>
+              </li>
+          </ul>
 
-        <ul>
-          <li><a href="#favourite-side3" data-toggle="modal">Соглашение</a></li>
-          <li><a href="#modal-intro1" data-toggle="modal">Welcome</a></li>
-          <li><a href="#modal-intro2" data-toggle="modal">Welcome - default</a></li>
-        </ul>
-    </div>
-</div>
+          <ul>
+            <li><a href="#favourite-side3" data-toggle="modal">Соглашение</a></li>
+            <li><a href="#modal-intro1" data-toggle="modal">Welcome</a></li>
+            <li><a href="#modal-intro2" data-toggle="modal">Welcome - default</a></li>
+          </ul>
+      </div>
+  </div>
 
         <div class="footer">
             <div class="footer__container">
@@ -193,7 +183,7 @@
     </div>
     
     <div class="modal modal--simple fade" id="modal-intro1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="header">
+      <div class="header header--modal">
         <div class="header__container">
           <div class="header__description">
             <div class="head-h1">Слушаем и слышим</div>
@@ -207,7 +197,7 @@
           </div>
         </div>
     
-        <div class="header__background"></div>
+        <!-- <div class="header__background"></div> -->
       </div>
       <div class="modal-dialog modal-dialog--full">
         <div class="modal-content">
@@ -237,7 +227,7 @@
     </div>
     
     <div class="modal modal--simple fade" id="modal-intro2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="header">
+      <div class="header header--modal">
         <div class="header__container">
           <div class="header__description">
             <div class="head-h1">Слушаем и слышим</div>
@@ -251,7 +241,7 @@
           </div>
         </div>
     
-        <div class="header__background"></div>
+        <!-- <div class="header__background"></div> -->
       </div>
       <div class="modal-dialog modal-dialog--full">
         <div class="modal-content">

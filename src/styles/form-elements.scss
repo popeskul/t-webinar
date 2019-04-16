@@ -177,6 +177,11 @@ input {
     background-color: transparent;
     cursor: pointer;
 
+    @media(max-width: $screen-md) {
+      transform: none;
+      top: 0px;
+    }
+
     &:checked+span:before {
       content: "";
       position: absolute;
@@ -184,10 +189,9 @@ input {
       top: 50%;
       margin-top: -4px;
       left: 2px;
-      //@include sprite($icon-check-blue)
-      background-image: url(../icons/check-blue.svg);
-      background-repeat: no-repeat;
-      background-position: bottom;
+      // background-image: url(../icons/check-blue.svg);
+      background-repeat: no-repeat !important;
+      background-position: bottom !important;
       width: 26px;
       height: 26px;
     }
@@ -198,6 +202,7 @@ input {
     color: #3c4454;
 
     @media(max-width: $screen-md){
+      font-size: 12px;
       line-height: 18px;
     }
 

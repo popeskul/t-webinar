@@ -1,5 +1,5 @@
 .tab-promo {
-  margin-bottom: 66px;
+  margin-bottom: 67px;
 
   @media(max-width: $screen-md) {
     margin-bottom: 40px;
@@ -42,10 +42,12 @@
     li {
       float: none;
       display: inline-block;
+      margin-left: 6px;
+      margin-right: 6px;
 
       &.active {
         a {
-          border-bottom: 4px solid $color-february;
+          border-bottom: 4px solid;
           color: $color-grey;
           background-color: transparent;
 
@@ -70,6 +72,11 @@
         padding-left: 10px;
         padding-right: 10px;
         letter-spacing: 0.5px;
+
+        @media(max-width: $screen-md) {
+          padding-top: 20px;
+          padding-bottom: 19px;
+        }
       }
     }
   }
@@ -78,7 +85,7 @@
     padding: 62px 0px 0px 0px;
 
     @media(max-width: $screen-md) {
-      padding-top: 60px;
+      padding-top: 58px;
     }
 
     p {
@@ -88,6 +95,18 @@
         line-height: 22px;
       }
     }
+
+    &__title {
+      margin-bottom: 41px;
+
+      @media(max-width: $screen-md) {
+        margin-bottom: 31px;
+      }
+    }
+  }
+
+  &--catalog {
+    margin-bottom: 0;
   }
 }
 

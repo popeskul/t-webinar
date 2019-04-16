@@ -1,0 +1,78 @@
+@import "grids";
+
+.changeable-main {
+  $changeable-color: $color-promo;
+  // $color-promo
+
+  .profile-promo__position {
+    color: $changeable-color;
+  }
+
+  .tab-promo .nav-tabs li a {
+    border-color: $changeable-color !important;
+  }
+
+  .promo-article {
+    &__time svg {
+      fill: $changeable-color;
+    }
+    &__title__text {
+      background-color: $changeable-color;
+      box-shadow: 10px 0 0  $changeable-color, -10px 0 0  $changeable-color;
+
+      @media(max-width: $screen-md) {
+        box-shadow: 5px 0 0 $changeable-color, -5px 0 0 $changeable-color;
+      }
+    }
+    &__profile__position {
+      color: $changeable-color;
+    }
+    &__info__list svg {
+      fill: $changeable-color;
+    }
+    &__banner__info {
+      border-color: $changeable-color;
+      color: $changeable-color;
+    }
+    &__banner__title {
+      color: $changeable-color;
+    }
+  }
+
+  .footer {
+    &__main a {
+      color: $changeable-color;
+    }
+  }
+
+  .promo-label input[type="checkbox"]:checked + span:before {
+    background-image: url(../icons/check-blue.svg);
+  }
+
+  .simple-circle {
+    border-color: $changeable-color;
+    color: $changeable-color;
+  }
+
+  .ps__rail-y .ps__thumb-y {
+    background-color: $changeable-color;
+  }
+
+  .modal-backdrop {
+    background-color: $changeable-color;
+  }
+
+  .article {
+    &__time svg {
+      fill: $changeable-color;
+    }
+
+    &__pormo-img__title__text {
+      background-color:  $changeable-color;
+      box-shadow: 10px 0 0  $changeable-color, -10px 0 0  $changeable-color;
+    }
+    &__pormo-img__play svg {
+      fill: $changeable-color;
+    }
+  }
+}
