@@ -1,57 +1,57 @@
 .profile-promo__position {
-  color: orange; }
+  color: #00abe0; }
 
 .tab-promo .nav-tabs li a {
-  border-color: orange !important; }
+  border-color: #00abe0 !important; }
 
 .promo-article__time svg {
-  fill: orange; }
+  fill: #00abe0; }
 
 .promo-article__title__text {
-  background-color: orange;
-  box-shadow: 10px 0 0 orange, -10px 0 0 orange; }
+  background-color: #00abe0;
+  box-shadow: 10px 0 0 #00abe0, -10px 0 0 #00abe0; }
   @media (max-width: 1040px) {
     .promo-article__title__text {
-      box-shadow: 5px 0 0 orange, -5px 0 0 orange; } }
+      box-shadow: 5px 0 0 #00abe0, -5px 0 0 #00abe0; } }
 
 .promo-article__profile__position {
-  color: orange; }
+  color: #00abe0; }
 
 .promo-article__info__list svg {
-  fill: orange; }
+  fill: #00abe0; }
 
 .promo-article__banner__info {
-  border-color: orange;
-  color: orange; }
+  border-color: #00abe0;
+  color: #00abe0; }
 
 .promo-article__banner__title {
-  color: orange; }
+  color: #00abe0; }
 
 .footer__main a {
-  color: orange; }
+  color: #00abe0; }
 
 .promo-label input[type="checkbox"]:checked + span:before {
   background-image: url(../icons/check-blue.svg); }
 
 .simple-circle {
-  border-color: orange;
-  color: orange; }
+  border-color: #00abe0;
+  color: #00abe0; }
 
 .ps__rail-y .ps__thumb-y {
-  background-color: orange; }
+  background-color: #00abe0; }
 
 .modal-backdrop {
-  background-color: orange; }
+  background-color: #00abe0; }
 
 .article__time svg {
-  fill: orange; }
+  fill: #00abe0; }
 
 .article__pormo-img__title__text {
-  background-color: orange;
-  box-shadow: 10px 0 0 orange, -10px 0 0 orange; }
+  background-color: #00abe0;
+  box-shadow: 10px 0 0 #00abe0, -10px 0 0 #00abe0; }
 
 .article__pormo-img__play svg {
-  fill: orange; }
+  fill: #00abe0; }
 
 .changeable-danger .promo-article__more .btn {
   background-color: #f91c42; }

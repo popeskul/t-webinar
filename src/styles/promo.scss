@@ -464,6 +464,10 @@
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
       background-image: url("../img/quote@2x.png");
     }
+
+    @media(max-width: $screen-sm) {
+      display: none;
+    }
   }
 
   p {}
@@ -1013,6 +1017,7 @@
       @media(max-width: $screen-md) {
         //padding-right: 0px;
         margin-left: 11px;
+        margin-top: 10px;
       }
 
       & > p {
@@ -1022,7 +1027,7 @@
 
         @media(max-width: $screen-sm) {
           margin-top: 9px;
-          font-size: 11px;
+          font-size: 11px !important;
           line-height: 18px !important;
         }
       }
@@ -1039,6 +1044,7 @@
         font-size: 14px;
         margin-top: 0;
         line-height: 20px;
+        margin-bottom: 3px;
       }
     }
 
@@ -1663,6 +1669,7 @@
         // margin-bottom: 18px;
         @media(max-width: $screen-sm) {
           margin-left: -60px;
+          margin-top: -7px;
         }
       }
     }

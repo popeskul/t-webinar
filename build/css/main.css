@@ -6330,9 +6330,7 @@ select.selectpicker {
 @font-face {
   font-family: 'trebuch-bd';
   src: url("../fonts/trebucbd.eot");
-  src: local("☺"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); }
 
 @font-face {
   font-family: 'trebuch';
@@ -8318,6 +8316,9 @@ input {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
       .quote-promo:before {
         background-image: url("../img/quote@2x.png"); } }
+    @media (max-width: 767px) {
+      .quote-promo:before {
+        display: none; } }
   .quote-promo--article {
     font-size: 14px;
     font-family: "Verdana-Italic"; }
@@ -8736,7 +8737,8 @@ input {
     margin-top: 12px; }
     @media (max-width: 1040px) {
       .promo-article__profile__description {
-        margin-left: 11px; } }
+        margin-left: 11px;
+        margin-top: 10px; } }
     .promo-article__profile__description > p {
       margin-top: 10px;
       font-size: 12px;
@@ -8744,7 +8746,7 @@ input {
       @media (max-width: 767px) {
         .promo-article__profile__description > p {
           margin-top: 9px;
-          font-size: 11px;
+          font-size: 11px !important;
           line-height: 18px !important; } }
   .promo-article__profile__title {
     display: inline-block;
@@ -8757,7 +8759,8 @@ input {
       .promo-article__profile__title {
         font-size: 14px;
         margin-top: 0;
-        line-height: 20px; } }
+        line-height: 20px;
+        margin-bottom: 3px; } }
   .promo-article__profile__position {
     font-size: 12px;
     color: #00abe0;
@@ -9287,7 +9290,8 @@ input {
         margin-top: -4px; }
         @media (max-width: 767px) {
           .article__profile__wrapper .quote-promo {
-            margin-left: -60px; } }
+            margin-left: -60px;
+            margin-top: -7px; } }
     .article__profile__img {
       float: left;
       border-radius: 50%;
