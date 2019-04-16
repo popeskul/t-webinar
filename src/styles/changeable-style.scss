@@ -1,8 +1,8 @@
 @import "grids";
 
-.changeable-main {
+// .changeable-main {
+
   $changeable-color: $color-promo;
-  // $color-promo
 
   .profile-promo__position {
     color: $changeable-color;
@@ -74,5 +74,47 @@
     &__pormo-img__play svg {
       fill: $changeable-color;
     }
+  }
+// }
+
+
+
+// другое
+
+.changeable-danger {
+  $changeable-color: $color-bright;
+
+  .promo-article__more .btn {
+    background-color: $changeable-color;
+  }
+
+  .profile-promo__footer .btn {
+    background-color: $changeable-color;
+  }
+
+  .modal--simple .modal__button__agree {
+    background-color: $changeable-color;
+  }
+}
+
+.changeable-header {
+  .header {
+    background-color: white;
+  }
+}
+
+.changeable-message {
+  .promo-banner {
+    background-color: #f9fafb;
+  }
+}
+
+.changeable-body {
+  background-color: white;
+}
+
+.changeable-footer {
+  .footer {
+    background-color: #f9fafb;
   }
 }
