@@ -12,10 +12,10 @@ $width-default: 220px;
   .dropdown-toggle {
     padding: 18px 40px 13px 24px;
     border-radius: 0px;
-    border: solid 2px $color-february;
+    border: solid 2px $color-promo;
     font-size: 16px;
     color: $color-simple !important;
-    background-color: $color-february;
+    background-color: $color-promo;
     text-align: left;
 
     @media(max-width: $screen-md){
@@ -30,11 +30,11 @@ $width-default: 220px;
 
     &:focus {
       outline: 0px auto -webkit-focus-ring-color !important;
-      background-color: $color-february;
+      background-color: $color-promo;
     }
 
     &:active {
-      border-color: $color-february;
+      border-color: $color-promo;
     }
 
     .caret {
@@ -66,7 +66,7 @@ $width-default: 220px;
     padding: 8px 0px 18px 0px;
     box-shadow: none;
     //border: none;
-    border: solid 2px $color-february;
+    border: solid 2px $color-promo;
     border-top: none;
     //border-top-color: transparent !important;
     max-height: none !important;
@@ -181,15 +181,15 @@ $width-default: 220px;
   &.open {
     .dropdown-toggle {
       //background-color: #fff;
-      background-color: $color-february;
+      background-color: $color-promo;
       //color: $color-main;
-      border-color: $color-february !important;
+      border-color: $color-promo !important;
       border-bottom-color: transparent !important;
-      //background-color: $color-february;
+      //background-color: $color-promo;
       //color: $color-simple !important;
 
       &:hover, &:focus {
-        background-color: $color-february;
+        background-color: $color-promo;
       }
 
       &:after {

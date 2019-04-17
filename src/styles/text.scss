@@ -21,7 +21,7 @@
   font-family: $trebuchet-bd;
   @extend .color--main;
 
-  @media(max-width: $screen-sm){
+  @media(max-width: $screen-md){
     font-size: 24px;
     line-height: 30px;
   }
@@ -96,11 +96,11 @@ strong {
   }
 
   &--shine {
-    color: $color-february;
+    color: $color-promo;
   }
 
   &--batman {
-    color: #001625;
+    color: $color-grey;
   }
 
   &--mark {

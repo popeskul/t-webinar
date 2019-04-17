@@ -1,6 +1,7 @@
 .logo {
   width: 220px;
   height: 55px;
+  fill: $color-promo;
   @media(max-width: $screen-sm) {
     width: 111px;
     height: 28px;
