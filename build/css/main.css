@@ -6330,7 +6330,7 @@ select.selectpicker {
 @font-face {
   font-family: 'trebuch-bd';
   src: url("../fonts/trebucbd.eot");
-  src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg") format("svg"); }
+  src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); }
 
 @font-face {
   font-family: 'trebuch';
@@ -6400,7 +6400,7 @@ html {
 
 .head-h1 {
   font-size: 44px;
-  font-family: "trebuch-bd";
+  font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
   margin-bottom: 20px; }
   @media (max-width: 1040px) {
     .head-h1 {
@@ -6411,7 +6411,7 @@ html {
 .head-h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  font-family: "trebuch-bd"; }
+  font-family: "trebuch-bd", Arial, Helvetica, sans-serif; }
   @media (max-width: 1040px) {
     .head-h2 {
       font-size: 24px;
@@ -6420,7 +6420,7 @@ html {
 .head-h3, .promo-article__item__title a {
   font-size: 24px;
   font-weight: bold;
-  font-family: "trebuch-bd";
+  font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
   margin-bottom: 20px; }
   @media (max-width: 1040px) {
     .head-h3, .promo-article__item__title a {
@@ -6429,7 +6429,7 @@ html {
 
 .head-h4 {
   font-size: 28px;
-  font-family: "trebuch-bd";
+  font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-bottom: 20px; }
   @media (max-width: 1040px) {
@@ -6510,7 +6510,7 @@ button {
   .btn__promo {
     background-color: #f91c42;
     color: white;
-    font-family: "trebuch-bd";
+    font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
     padding: 13px 25px 15px 25px;
     font-size: 16px;
     border-radius: 30px;
@@ -7252,7 +7252,7 @@ input {
   flex: 0 0 42px;
   text-align: center;
   border: 2px solid #00abe0;
-  font-family: "trebuch-bd";
+  font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
   color: #00abe0;
   border-radius: 50%;
   font-size: 36px;
@@ -8233,7 +8233,7 @@ input {
     height: 163px; }
   .promo-article__wrapper--many .promo-article__title {
     font-size: 14px;
-    font-family: "trebuch-bd";
+    font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
     left: 20px;
     bottom: 11px;
     line-height: 20px; }
@@ -8581,7 +8581,7 @@ input {
     vertical-align: top;
     font-size: 19px;
     margin-bottom: 5px;
-    font-family: "trebuch-bd";
+    font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
     color: #002b45; }
     @media (max-width: 767px) {
       .promo-article__profile__title {
@@ -8643,7 +8643,7 @@ input {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: "trebuch-bd";
+    font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
     width: 42px;
     -ms-flex: 0 0 42px;
     flex: 0 0 42px;
