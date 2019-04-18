@@ -1,6 +1,8 @@
-@import "grids";
-
 // Цветовая гамма
+
+
+
+
 // Цветовая гамма (Палитра)
 .tab-promo .nav-tabs li a,
 .ps__rail-y .ps__thumb-y {
@@ -45,6 +47,10 @@
 
 
 
+
+
+
+
 // Красные элементы следующих страниц
 .promo-article__more .btn,
 .profile-promo__footer .btn,
@@ -55,10 +61,16 @@
 
 
 
+
+
+
 // Цвет фона шапки
 .header {
-  background-color: white;
+  // background-color: white;
 }
+
+
+
 
 
 
@@ -71,6 +83,8 @@
 
 
 
+
+
 // Цвет основного сайта
 body {
   // background-color: white;
@@ -78,10 +92,16 @@ body {
 
 
 
+
+
+
 // Цвет футера
 .footer {
-
+  // background-color: white;
 }
+
+
+
 
 
 
@@ -90,8 +110,11 @@ body {
 .promo-article__profile__title,
 .main-modal__promo__text,
 .main-modal__chart__title {
-
+  // color: #some-color
 }
+
+
+
 
 
 
@@ -99,37 +122,51 @@ body {
 // Цвет подзаголовков и основного текста
 .color--light,
 .color--batman {
-
+  // color: #some-color
 }
+
+
+
 
 
 
 // Цвет второстепенного текста
 .footer p, .footer ul a, .quote-promo, .promo-article__info, .promo-article__banner__footer p,
 .breadcrumb li, .breadcrumb li.active {
-
+  // color: #some-color
 }
+
+
+
 
 
 
 // Цвет текста с фоном
 .promo-article__time, .promo-article__title, .article__time, .article__pormo-img__title {
-
+  // color: #some-color
 }
+
+
+
 
 
 
 // Цвет текста на активной кнопке
 .btn__promo {
-
+  // color: #some-color
 }
+
+
+
 
 
 
 // Цвет неактивной кнопки
 .btn__promo--border {
-
+  // color: #some-color
 }
+
+
 
 
 
@@ -142,10 +179,16 @@ body {
 
 }
 
+
+
+
+
 // Изображение в шапке сайта.
 .header__background {
-
+  // background-image: url();
 }
+
+
 
 
 
@@ -163,8 +206,12 @@ body {
 .promo-article__wrapper--many .promo-article__title,
 .promo-article__profile__title,
 .promo-article__banner__info {
-
+  // font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
 }
+
+
+
+
 
 
 
@@ -181,24 +228,34 @@ body,
 .main-modal__logo,
 .main-modal__content u,
 .main-modal__footer__main u {
-
+  // font-family: 'Verdana';
 }
+
+
+
+
 
 
 
 // Размеры шрифтов
 // Меняется размер шрифта по умолчанию 44px для заголовка.
 .head-h1 {
-
+  // font-size: 44px;
 }
+
+
+
 
 
 
 
 // Меняется размер шрифта по умолчанию 16px для подзаголовка.
 .header__description p {
-
+  // font-size: 16px;
 }
+
+
+
 
 
 
@@ -207,8 +264,11 @@ body,
 .head-h2,
 .simple-circle,
 .promo-article__banner__info {
-
+  // font-size: 36px;
 }
+
+
+
 
 
 
@@ -217,8 +277,11 @@ body,
 .head-h3,
 .promo-article__item__title a,
 .promo-article--school .promo-article__item__title a {
-
+  // font-size: 24px;
 }
+
+
+
 
 
 
@@ -230,14 +293,23 @@ body,
 .main-modal__footer__main p,
 .main-modal__medicina p,
 .promo-article__profile__title {
-
+  // font-size: 1px;
 }
+
+
+
+
+
 
 
 // Меняется размер шрифта кнопки по умолчанию 16px. Красная кнопка и кнопка без фона.
 .btn__promo {
-
+  // font-size: 1px;
 }
+
+
+
+
 
 
 
@@ -264,8 +336,12 @@ body,
 .main-modal__chart__description p,
 .favourite-side__item__title,
 .favourite-side--login p {
-
+  // font-size: 16px;
 }
+
+
+
+
 
 
 
@@ -298,8 +374,11 @@ body,
 .article__list-question__name,
 .article__list-question__text,
 .article__tag__ul {
-
+  // font-size: 14px;
 }
+
+
+
 
 
 
@@ -322,8 +401,12 @@ body,
 .promo-result__item__time,
 .main-modal__literature p,
 .favourite-side--guide .modal__title {
-
+  // font-size: 12px;
 }
+
+
+
+
 
 
 
@@ -336,6 +419,10 @@ body,
     // font-size: 24px; 
   } 
 }
+
+
+
+
 
 
 
@@ -356,12 +443,24 @@ body,
 
 
 
+
+
+
+
+
+
 // Размер шрифта текста #1 в мобайле
 @media (max-width: 1040px) {
   .main-modal__medicina p, .main-modal__info p, .main-modal__feature p {
-    font-size: 16px;
+    // font-size: 16px;
   } 
 }
+
+
+
+
+
+
 
 
 
@@ -373,24 +472,33 @@ body,
 }
 @media (max-width: 767px) {
   .promo-article__profile__title, .article__content p, .article__text, .promo-result__item__text, .calendar-catalog__name {
-
+    // font-size: 14px;
   }
 }
+
+
+
+
+
 
 
 
 
 // Размер шрифта текста #3 в мобайле
 @media (max-width: 1040px) {
-  .promo-label span, .header__description, .header__description p, .promo-banner__btn__group a, .favourite-side--guide .modal__title {
-
+  .promo-label span, .header__description p, .promo-banner__btn__group a, .favourite-side--guide .modal__title {
+    // font-size: 12px;
   }
 }
 @media (max-width: 767px) {
   .footer__description__sub, .promo-banner__btn__group a, .promo-result__more .btn {
-
+    // font-size: 12px;
   }
 }
+
+
+
+
 
 
 

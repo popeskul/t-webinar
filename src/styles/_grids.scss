@@ -69,7 +69,7 @@ $container-large-desktop:      940px + $grid-gutter-width;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop;
 
-$trebuch: 'trebuch';
+$trebuch: 'trebuch', Arial, Helvetica, sans-serif;
 $trebuchet-bd: "trebuch-bd", Arial, Helvetica, sans-serif;
 $verdana-italic: 'Verdana-Italic';
 $verdana-bold: 'Verdana-Bold';
