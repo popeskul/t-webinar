@@ -6328,7 +6328,7 @@ select.selectpicker {
   background: rgba(255, 255, 255, 0.9); }
 
 @font-face {
-  font-family: 'trebucbd';
+  font-family: 'trebuch-bd';
   src: url("..fonts/trebucbd.eot");
   src: local("☺"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg") format("svg");
   font-weight: normal;
