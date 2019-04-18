@@ -6328,9 +6328,11 @@ select.selectpicker {
   background: rgba(255, 255, 255, 0.9); }
 
 @font-face {
-  font-family: 'trebuch-bd';
-  src: url("../fonts/trebucbd.eot");
-  src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); }
+  font-family: 'trebucbd';
+  src: url("..fonts/trebucbd.eot");
+  src: local("☺"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: 'trebuch';
