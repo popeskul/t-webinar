@@ -182,18 +182,27 @@ input {
       top: 0px;
     }
 
-    &:checked+span:before {
-      content: "";
-      position: absolute;
-      transform: translate(0, -50%);
-      top: 50%;
-      margin-top: -4px;
-      left: 2px;
-      background-image: url(../icons/check-blue.svg);
-      background-repeat: no-repeat !important;
-      background-position: bottom !important;
+    &:checked+.promo-label__icon {
+      display: block;
+    }
+  }
+
+  &__icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+
+    @media(max-width: $screen-md) {
+      top: -7px;
+    }
+
+    svg, img {
       width: 26px;
       height: 26px;
+      stroke: #00ABE0;
     }
   }
 

@@ -6796,18 +6796,22 @@ input {
       .promo-label input[type="checkbox"] {
         transform: none;
         top: 0px; } }
-    .promo-label input[type="checkbox"]:checked + span:before {
-      content: "";
-      position: absolute;
-      transform: translate(0, -50%);
-      top: 50%;
-      margin-top: -4px;
-      left: 2px;
-      background-image: url(../icons/check-blue.svg);
-      background-repeat: no-repeat !important;
-      background-position: bottom !important;
+    .promo-label input[type="checkbox"]:checked + .promo-label__icon {
+      display: block; }
+  .promo-label__icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 26px;
+    height: 26px; }
+    @media (max-width: 1040px) {
+      .promo-label__icon {
+        top: -7px; } }
+    .promo-label__icon svg, .promo-label__icon img {
       width: 26px;
-      height: 26px; }
+      height: 26px;
+      stroke: #00ABE0; }
   .promo-label span {
     font-size: 13px;
     color: #3c4454; }
@@ -7707,13 +7711,13 @@ input {
           line-height: 24px;
           margin-bottom: 6px; } }
     .footer__description__sub {
-      font-size: 14px;
+      font-size: 14px !important;
       line-height: 22px;
       font-family: "Verdana";
       margin-bottom: 17px; }
       @media (max-width: 767px) {
         .footer__description__sub {
-          font-size: 12px;
+          font-size: 12px !important;
           margin-bottom: 15px; } }
     .footer__description p {
       margin-bottom: 17px;
@@ -8091,7 +8095,8 @@ input {
         text-align: center; } }
     .profile-promo__description p {
       margin-bottom: 9px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-size: 14px; }
     .profile-promo__description .profile-promo__chief {
       line-height: 17px;
       margin-bottom: 5px; }
@@ -8100,6 +8105,8 @@ input {
           margin-bottom: 8px; } }
     .profile-promo__description .profile-promo__position {
       margin-bottom: 9px; }
+  .profile-promo__position {
+    color: #00abe0; }
   .profile-promo__title {
     margin-bottom: 5px; }
     @media (max-width: 767px) {
@@ -8167,7 +8174,7 @@ input {
   position: absolute;
   bottom: 24px;
   left: 31px;
-  color: white;
+  color: white !important;
   line-height: 30px;
   max-width: 53%; }
   @media (max-width: 1040px) {

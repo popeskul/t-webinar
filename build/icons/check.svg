@@ -10,8 +10,8 @@
             <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
         </filter>
     </defs>
-    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(-4 -248)">
+    <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(-4 -248)">
         <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-        <use stroke="#00ABE0" stroke-width="4" xlink:href="#b"/>
+        <use stroke-width="4" xlink:href="#b"/>
     </g>
 </svg>

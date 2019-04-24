@@ -11,9 +11,11 @@
 .promo-article__title__text {
   /* background-color: $color-promo;
   box-shadow: 10px 0 0  $color-promo, -10px 0 0  $color-promo; */
-
-  @media(max-width: 992px) {
-    /* box-shadow: 5px 0 0 $color-promo, -5px 0 0 $color-promo; */
+}
+@media(max-width: 992px) {
+  .promo-article__title__text {
+    /* background-color: $color-promo;
+    box-shadow: 10px 0 0  $color-promo, -10px 0 0  $color-promo; */
   }
 }
 .promo-article__profile__position,
@@ -27,17 +29,17 @@
   /* border-color: $color-promo; */
   /* color: $color-promo; */
 }
-.promo-label input[type="checkbox"]:checked + span:before {
-  /* background-image: url(../icons/check-blue.svg); */
-}
-.modal-backdrop {
-  /* background-color: $color-promo; */
+.modal-backdrop, .ps__rail-y .ps__thumb-y {
+  /* background-color: #00abe0; */
 }
 .article__time svg,
 .article__pormo-img__play svg,
 .promo-article__info__list svg,
 .promo-article__time svg {
   /* fill: $color-promo; */
+}
+.promo-label__icon svg {
+  /* stroke: #00ABE0 */
 }
 .article__pormo-img__title__text {
   /* background-color:  $color-promo;
@@ -57,7 +59,10 @@
 .modal--simple .modal__button__agree {
   /* background-color: $color-promo; */
 }
-
+.profile-promo__footer .btn,
+.modal--simple .modal__button__agree {
+  /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5); */
+}
 
 
 
@@ -110,7 +115,7 @@ body {
 .promo-article__profile__title,
 .main-modal__promo__text,
 .main-modal__chart__title {
-  /* color: #some-color */
+  /* color: blue */
 }
 
 
@@ -121,7 +126,12 @@ body {
 /* Цвет шрифтов */
 /* Цвет подзаголовков и основного текста */
 .color--light,
-.color--batman {
+.color--batman,
+body,
+.profile-promo__description,
+.promo-like__group .promo-like__num,
+.tab-promo .nav-tabs li.active a,
+.tab-promo .nav-tabs li a  {
   /* color: #some-color */
 }
 
@@ -132,7 +142,7 @@ body {
 
 /* Цвет второстепенного текста */
 .footer p, .footer ul a, .quote-promo, .promo-article__info, .promo-article__banner__footer p,
-.breadcrumb li, .breadcrumb li.active {
+.breadcrumb li, .breadcrumb li a, .breadcrumb li.active {
   /* color: #some-color */
 }
 
@@ -143,7 +153,7 @@ body {
 
 /* Цвет текста с фоном */
 .promo-article__time, .promo-article__title, .article__time, .article__pormo-img__title {
-  /* color: #some-color */
+  /* color: #some-color !important*/
 }
 
 
@@ -152,7 +162,7 @@ body {
 
 
 /* Цвет текста на активной кнопке */
-.btn__promo {
+.btn__promo, .btn__promo:hover, .btn__promo:focus {
   /* color: #some-color */
 }
 
@@ -163,7 +173,8 @@ body {
 
 /* Цвет неактивной кнопки */
 .btn__promo--border {
-  /* color: #some-color */
+  /* box-shadow: inset 0px 0px 0px 2px #979797; */
+  /* color: #979797; */
 }
 
 
@@ -176,7 +187,7 @@ body {
 /* Логотип */
 /* Логотип в шапке, футере, Welcome попапе. */
 .logo {
-
+  /* fill: #00abe0; */
 }
 
 
@@ -195,6 +206,7 @@ body {
 
 /* Шрифты */
 /* Меняет шрифт по умолчанию «TrebuchetMS-Bold» для всех текстовых блоков на сайтеz */
+/* Прописываем пути */
 .head-h1,
 .head-h2,
 .head-h3,
@@ -207,6 +219,8 @@ body {
 .promo-article__profile__title,
 .promo-article__banner__info {
   /* font-family: "trebuch-bd", Arial, Helvetica, sans-serif; */
+  /* src: url("../fonts/trebucbd.eot"); */
+  /* src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); } */
 }
 
 
@@ -373,7 +387,8 @@ body,
 .article__title,
 .article__list-question__name,
 .article__list-question__text,
-.article__tag__ul {
+.article__tag__ul,
+.favourite-side p {
   /* font-size: 14px; */
 }
 
@@ -400,11 +415,37 @@ body,
 .promo-result__item__notify,
 .promo-result__item__time,
 .main-modal__literature p,
-.favourite-side--guide .modal__title {
+.favourite-side--guide .modal__title,
+.promo-label span {
   /* font-size: 12px; */
 }
 
 
+
+
+
+.tab-promo__top__title,
+.tab-content__title,
+.promo-block__title,
+.promo-banner__title, 
+.promo-article__title,
+.promo-article__profile__title,
+.promo-article__profile__position,
+.article__title,
+.profile-promo__title,
+.profile-promo__position
+.article__pormo-img__title,
+.header__description .head-h1,
+.modal__title,
+.promo-article__title__text, 
+.favourite-side__title,
+.favourite-side__item__title .head-h3,
+.promo-article__banner__title,
+.footer__description .head-h3 {
+  /* font-family: "trebuch-bd", Arial, Helvetica, sans-serif; */
+  /* src: url("../fonts/trebucbd.eot"); */
+  /* src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); } */
+}
 
 
 
@@ -490,7 +531,7 @@ body,
 }
 @media (max-width: 767px) {
   .footer__description__sub, .promo-banner__btn__group a, .promo-result__more .btn {
-    /* font-size: 12px; */
+    /* font-size: 12px; !important */
   }
 }
 

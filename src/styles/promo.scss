@@ -388,6 +388,7 @@
     p {
       margin-bottom: 9px;
       line-height: 22px;
+      font-size: 14px;
     }
 
     #{$block-name} {
@@ -405,6 +406,10 @@
         margin-bottom: 9px;
       }
     }
+  }
+
+  &__position {
+    color: #00abe0;
   }
 
   &__title {
@@ -502,7 +507,7 @@
     position: absolute;
     bottom: 24px;
     left: 31px;
-    color: white;
+    color: white !important;
     line-height: 30px;
     max-width: 53%;
     // padding-left: 5px;
@@ -535,7 +540,10 @@
 
   &__wrapper {
     @include make-row;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: -20px;
     margin-right: -20px;
