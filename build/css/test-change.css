@@ -54,13 +54,15 @@
 
 
 /* Красные элементы следующих страниц */
+.btn__promo, 
 .promo-article__more .btn,
 .profile-promo__footer .btn,
 .modal--simple .modal__button__agree {
   /* background-color: $color-promo; */
 }
 .profile-promo__footer .btn,
-.modal--simple .modal__button__agree {
+.modal--simple .modal__button__agree, 
+.btn__promo {
   /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5); */
 }
 
@@ -187,7 +189,13 @@ body,
 /* Логотип */
 /* Логотип в шапке, футере, Welcome попапе. */
 .logo {
-  /* fill: #00abe0; */
+  /* background-image: url(../img/logo.png); */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+  .logo {
+    /* background-image: url(../img/logo@2x.png); */
+  }
 }
 
 
@@ -243,6 +251,8 @@ body,
 .main-modal__content u,
 .main-modal__footer__main u {
   /* font-family: 'Verdana'; */
+  /* src: url("../fonts/trebucbd.eot"); */
+  /* src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); } */
 }
 
 
@@ -389,7 +399,7 @@ body,
 .article__list-question__text,
 .article__tag__ul,
 .favourite-side p {
-  /* font-size: 14px; */
+  font-size: 14px;
 }
 
 
@@ -423,7 +433,7 @@ body,
 
 
 
-
+/* Стиль заголовков  */
 .tab-promo__top__title,
 .tab-content__title,
 .promo-block__title,

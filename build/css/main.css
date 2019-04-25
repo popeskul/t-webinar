@@ -6363,14 +6363,20 @@ select.selectpicker {
 .logo {
   width: 220px;
   height: 55px;
-  fill: #00abe0; }
+  background-image: url(../img/logo.png);
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important; }
   @media (max-width: 767px) {
     .logo {
       width: 111px;
       height: 28px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+    .logo {
+      background-image: url(../img/logo.png); } }
   .logo--mini {
-    width: 234px;
-    height: 17px; }
+    width: 220px;
+    height: 55px; }
 
 .digital-logo {
   background: url(../img/breffi-digital-logo-grey.png);
@@ -7681,10 +7687,6 @@ input {
     @media (max-width: 767px) {
       .footer__logo {
         margin-bottom: 31px; } }
-    @media (max-width: 1040px) {
-      .footer__logo .logo {
-        width: 220px;
-        height: 55px; } }
   .footer__description {
     position: relative;
     min-height: 1px;
