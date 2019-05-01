@@ -574,7 +574,7 @@
           @include make-xs-column(24);
           @include make-sm-column(12);
           @include make-md-column(8);
-          float: none !important;
+          // float: none !important;
 
           @media(max-width: $screen-md) {
 
@@ -615,7 +615,7 @@
         }
 
         &__time {
-          bottom: 7px;
+          // bottom: 7px;
           right: 9px;
         }
 
@@ -645,7 +645,7 @@
         &__block {
           @include make-xs-column(24);
           @include make-md-column(12);
-          float: none !important;
+          // float: none !important;
           display: inline-block;
           vertical-align: top;
         }
@@ -660,7 +660,7 @@
       #{$block-name} {
         &__block {
           @include make-xs-column(24);
-          float: none !important;
+          // float: none !important;
           display: inline-block;
           vertical-align: top;
           padding: 0 !important;
@@ -693,7 +693,7 @@
   &__block {
     @include make-xs-column(24);
     @include make-sm-column(12);
-    float: none !important;
+    // float: none !important;
     display: flex;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -782,11 +782,12 @@
 
     &__main {
       position: absolute;
-      transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
       min-height: 100%;
       min-width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -795,7 +796,7 @@
     top: 10px;
     right: 9px;
     background: rgba(0, 0, 0, 0.2);
-    height: 25px;
+    // height: 25px;
     font-size: 14px;
     padding: 4px 7px 4px 8px;
     color: white;
@@ -1576,7 +1577,7 @@
     top: 20px;
     right: 20px;
     background: rgba(0, 0, 0, 0.2);
-    height: 25px;
+    // height: 25px;
     font-size: 14px;
     line-height: 22px;
     padding: 0px 5px 4px 5px;
