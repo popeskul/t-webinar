@@ -1,3 +1,4 @@
+/* Цветовая гамма (Палитра) */
 .tab-promo .nav-tabs li a,
 .ps__rail-y .ps__thumb-y {
   border-color: #00abe0 !important;
@@ -46,7 +47,7 @@
 
 
 
-
+/* Красные элементы следующих страниц */
 .btn__promo, 
 .promo-article__more .btn,
 .profile-promo__footer .btn,
@@ -63,7 +64,7 @@
 
 
 
-
+/* Цвет фона шапки */
 .header {
   background-color: white;
 }
@@ -73,7 +74,7 @@
 
 
 
-
+/* Цвет фона уведомления */
 .promo-banner {
   background-color: #f9fafb;
 }
@@ -82,7 +83,7 @@
 
 
 
-
+/* Цвет основного сайта */
 body {
   background-color: white;
 }
@@ -91,7 +92,7 @@ body {
 
 
 
-
+/* Цвет футера */
 .footer {
   background-color: white;
 }
@@ -100,7 +101,7 @@ body {
 
 
 
-
+/* Цвет заголовков */
 .color--main, .head-h1, .head-h2, .head-h3, .promo-article__item__title a,
 .promo-article__profile__title,
 .main-modal__promo__text,
@@ -112,7 +113,7 @@ body {
 
 
 
-
+/* Цвет подзаголовков и основного текста */
 .color--light,
 .color--batman,
 body,
@@ -127,7 +128,7 @@ body,
 
 
 
-
+/* Цвет второстепенного текста */
 .footer p, .footer ul a, .quote-promo, .promo-article__info, .promo-article__banner__footer p,
 .breadcrumb li, .breadcrumb li a, .breadcrumb li.active {
   color: #464645;
@@ -137,7 +138,7 @@ body,
 
 
 
-
+/* Цвет текста с фоном */
 .promo-article__time, .promo-article__title, .article__time, .article__pormo-img__title {
   color: #ffffff !important;
 }
@@ -146,7 +147,7 @@ body,
 
 
 
-
+/* Цвет текста на активной кнопке */
 .btn__promo, .btn__promo:hover, .btn__promo:focus {
   color: #ffffff;
 }
@@ -155,7 +156,7 @@ body,
 
 
 
-
+/* Цвет неактивной кнопки */
 .btn__promo--border {
   box-shadow: inset 0px 0px 0px 2px #979797;
   color: #979797;
@@ -166,7 +167,7 @@ body,
 
 
 
-
+/* Логотип в шапке, футере, Welcome попапе. */
 .logo {
   background-image: url(../img/logo@2x.png);
 }
@@ -181,7 +182,7 @@ body,
 
 
 
-
+/* Изображение в шапке сайта. */
 @media(min-width: 1050px) {
   .header__background {
     background-image: url(../img/header-background@2x.png);
@@ -192,7 +193,9 @@ body,
 
 
 
-
+/* Шрифты */
+/* Меняет шрифт по умолчанию «TrebuchetMS-Bold» для всех текстовых блоков на сайтеz */
+/* Прописываем пути */
 .head-h1,
 .head-h2,
 .head-h3,
@@ -221,7 +224,7 @@ body,
 
 
 
-
+/* Меняется шрифт по умолчанию «Verdana» на всех текстовых блоках сайта. */
 body,
 .footer__description__sub,
 .footer__list a,
@@ -249,7 +252,8 @@ body,
 
 
 
-
+/* Размеры шрифтов */
+/* Меняется размер шрифта по умолчанию 44px для заголовка. */
 @media(min-width: 1050px) {
   .head-h1 {
     font-size: 44px;
@@ -260,7 +264,7 @@ body,
 
 
 
-
+/* Меняется размер шрифта по умолчанию 16px для подзаголовка. */
 @media(min-width: 1050px) {
   .header__description p {
     font-size: 16px;
@@ -270,7 +274,7 @@ body,
 
 
 
-
+/* Меняется размер шрифта по умолчанию 36px для: */
 @media(min-width: 1050px) {
   .head-h2,
   .simple-circle,
@@ -282,7 +286,7 @@ body,
 
 
 
-
+/* Меняется размер шрифта по умолчанию 24px для: */
 @media(min-width: 1050px) {
   .head-h3,
   .promo-article__item__title a,
@@ -295,7 +299,7 @@ body,
 
 
 
-
+/* Меняется размер шрифта по умолчанию 18px для: */
 @media(min-width: 1050px) {
   .scrollbar__title,
   .main-modal__content u,
@@ -309,7 +313,7 @@ body,
 
 
 
-
+/* Меняется размер шрифта кнопки по умолчанию 16px. Красная кнопка и кнопка без фона. */
 @media(min-width: 1050px) {
   .btn__promo {
     font-size: 16px;
@@ -321,7 +325,7 @@ body,
 
 
 
-
+/* Меняет все шрифты сайта размером 16px. */
 @media(min-width: 1050px) {
   .btn__promo,
   .promo-label__group--login span,
@@ -353,7 +357,7 @@ body,
 
 
 
-
+/* Меняет все шрифты сайта размером 14px. */
 @media(min-width: 1050px) {
   .breadcrumb li a,
   .promo-banner__name,
@@ -381,7 +385,7 @@ body,
   .promo-like,
   .promo-article__wrapper--many .promo-article__profile__title,
   .favourite-side p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -389,7 +393,7 @@ body,
 
 
 
-
+/* Меняет все шрифты сайта размером 12px. */
 @media(min-width: 1050px) {
   .footer__main p,
   .footer__description p,
@@ -414,7 +418,7 @@ body,
 
 
 
-
+/* Стиль заголовков */
 .tab-promo__top__title,
 .tab-content__title,
 .promo-block__title,
@@ -440,7 +444,7 @@ body,
 
 
 
-
+/* Стили шрифтов Мобайл заголовка #1 в мобайле */
 @media (max-width: 1040px) {
   .head-h1, .head-h4, .head-h2 {
     font-size: 24px; 
@@ -453,7 +457,7 @@ body,
 
 
 
-
+/* Размер шрифта заголовка #2 в мобайле */
 @media (max-width: 1040px) {
   .promo-block__title, .article__question__title, .main-modal__logo, .main-modal__promo__text, .main-modal__list li, .main-modal__list li p {
     font-size: 18px;
@@ -474,7 +478,7 @@ body,
 
 
 
-
+/* Размер шрифта текста #1 в мобайле */
 @media (max-width: 1040px) {
   .main-modal__medicina p, .main-modal__info p, .main-modal__feature p {
     font-size: 16px;
@@ -488,7 +492,7 @@ body,
 
 
 
-
+/* Размер шрифта текста #2 в мобайле */
 @media (max-width: 1040px) {
   .quote-promo--article p, .promo-article__text p  {
     font-size: 14px !important;
@@ -507,7 +511,7 @@ body,
 
 
 
-
+/* Размер шрифта текста #3 в мобайле */
 @media (max-width: 1040px) {
   .promo-label span, .header__description p, .promo-banner__btn__group a, .favourite-side--guide .modal__title {
     font-size: 12px;
@@ -515,7 +519,7 @@ body,
 }
 @media (max-width: 767px) {
   .footer__description__sub, .promo-banner__btn__group a, .promo-result__more .btn {
-    font-size: 12px; !important
+    font-size: 12px !important;
   }
 }
 
@@ -525,7 +529,7 @@ body,
 
 
 
-
+/* Размер шрифта текста #4 в мобайле */
 @media (max-width: 767px) {
   .promo-article__profile__description > p, .promo-result__item__info {
     font-size: 11px !important;
