@@ -6330,7 +6330,8 @@ select.selectpicker {
 @font-face {
   font-family: 'trebuch-bd';
   src: url("../fonts/trebucbd.eot");
-  src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg"); }
+  src: url("../fonts/trebucbd.eot") format("embedded-opentype"), url("../fonts/trebucbd.woff2") format("woff2"), url("../fonts/trebucbd.woff") format("woff"), url("../fonts/trebucbd.ttf") format("truetype"), url("../fonts/trebucbd.svg#trebucbd") format("svg");
+  font-weight: 100; }
 
 @font-face {
   font-family: 'trebuch';
@@ -8196,10 +8197,6 @@ input {
 .promo-article__wrapper {
   margin-right: -15px;
   margin-left: -15px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-left: -20px;
   margin-right: -20px;
   font-size: 0; }
@@ -8277,9 +8274,7 @@ input {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px;
-    display: inline-block;
-    vertical-align: top; }
+    padding-left: 15px; }
     @media (min-width: 1040px) {
       .promo-article__wrapper--two .promo-article__block {
         float: left;
@@ -8293,8 +8288,6 @@ input {
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px;
-      display: inline-block;
-      vertical-align: top;
       padding: 0 !important;
       margin-bottom: 40px; }
     .promo-article__wrapper--single .promo-article__img {
@@ -8320,8 +8313,9 @@ input {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  display: -ms-flexbox;
-  display: flex;
+  float: none !important;
+  display: inline-block;
+  vertical-align: top;
   padding-left: 20px !important;
   padding-right: 20px !important;
   margin-bottom: 40px; }

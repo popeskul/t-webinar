@@ -540,11 +540,11 @@
 
   &__wrapper {
     @include make-row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -ms-flex-wrap: wrap;
+    // flex-wrap: wrap;
     margin-left: -20px;
     margin-right: -20px;
     font-size: 0;
@@ -650,8 +650,6 @@
           @include make-xs-column(24);
           @include make-md-column(12);
           // float: none !important;
-          display: inline-block;
-          vertical-align: top;
         }
 
         &__img {}
@@ -665,8 +663,6 @@
         &__block {
           @include make-xs-column(24);
           // float: none !important;
-          display: inline-block;
-          vertical-align: top;
           padding: 0 !important;
           margin-bottom: 40px;
         }
@@ -697,8 +693,10 @@
   &__block {
     @include make-xs-column(24);
     @include make-sm-column(12);
-    // float: none !important;
-    display: flex;
+    float: none !important;
+    display: inline-block;
+    vertical-align: top;
+    // display: flex;
     padding-left: 20px !important;
     padding-right: 20px !important;
     margin-bottom: 40px;
