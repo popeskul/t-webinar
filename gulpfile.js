@@ -23,7 +23,6 @@ var paths = {
         html: 'src/*.html',
         js: ['src/scripts/*.js'],
         css: 'src/styles/main.scss',
-        changeableStyle: 'src/styles/changeable-style.scss',
         img: 'src/img/**/*',
         fonts: 'src/fonts/**/*.*',
         sprites: 'src/img/sprites/*.png',
@@ -98,17 +97,6 @@ gulp.task('build:css', function(){
     gulp.src(paths.src.css)
         .pipe(sass())
         .pipe(concat('main.css'))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        // .pipe(cssmin())
-        .pipe(gulp.dest(paths.build.css))
-        .pipe(browserSync.reload({stream:true}));
-
-    gulp.src(paths.src.changeableStyle)
-        .pipe(sass())
-        .pipe(concat('changeable-style.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false

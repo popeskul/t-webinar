@@ -17,7 +17,7 @@
 .promo-article__banner__title,
 .footer__main a,
 .profile-promo__position {
-  color: #00abe0;
+  color: #00abe0 !important;
 }
 .promo-article__banner__info,
 .simple-circle {
@@ -48,16 +48,13 @@
 
 
 /* Красные элементы следующих страниц */
-.btn__promo, 
-.promo-article__more .btn,
-.profile-promo__footer .btn,
-.modal--simple .modal__button__agree {
+.btn__promo--danger {
   background-color: #00abe0;
+  box-shadow: 0 6px 10px 0 rgba(0, 171, 224, 0.5);
 }
-.profile-promo__footer .btn,
-.modal--simple .modal__button__agree, 
-.btn__promo {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+.btn__promo--danger:hover, .btn__promo--danger:focus {
+  background-color: #00abe0;
+  box-shadow: 0 6px 10px 0 rgba(0, 171, 224, 0.5);
 }
 
 
@@ -130,7 +127,7 @@ body,
 
 /* Цвет второстепенного текста */
 .footer p, .footer ul a, .quote-promo, .promo-article__info, .promo-article__banner__footer p,
-.breadcrumb li, .breadcrumb li a, .breadcrumb li.active {
+.breadcrumb li, .breadcrumb li a, .breadcrumb li.active, .promo-article__info__date {
   color: #464645;
 }
 
@@ -148,8 +145,8 @@ body,
 
 
 /* Цвет текста на активной кнопке */
-.btn__promo, .btn__promo:hover, .btn__promo:focus {
-  color: #ffffff;
+.btn__promo--simple, .btn__promo--simple:hover, .btn__promo--simple:focus {
+  color: #464645;
 }
 
 
@@ -207,7 +204,7 @@ body,
 .promo-article__wrapper--many .promo-article__title,
 .promo-article__profile__title,
 .promo-article__banner__info {
-  font-family: "trebucbd", Arial, Helvetica, sans-serif;
+  font-family: "trebucbd", Arial, Helvetica, sans-serif !important;
 }
 
 @font-face {
@@ -360,14 +357,14 @@ body,
 /* Меняет все шрифты сайта размером 14px. */
 @media(min-width: 1050px) {
   .breadcrumb li a,
+  .breadcrumb li,
   .promo-banner__name,
   .favourite-side--login p,
   .footer__description__sub,
-  .footer ul,
   .tab-promo .nav-tabs,
   .main-modal__nav__text,
   .promo-banner__btn__group a,
-  .profile-promo__description,
+  .profile-promo__description p,
   .profile-promo__more,
   .quote-promo--article,
   .promo-article__wrapper--many .promo-article__title,
@@ -409,7 +406,6 @@ body,
   .article__list-question__favourite,
   .promo-result__item__notify,
   .promo-result__item__time,
-  .main-modal__literature p,
   .favourite-side--guide .modal__title,
   .promo-label span {
     font-size: 12px;
@@ -446,7 +442,7 @@ body,
 
 /* Стили шрифтов Мобайл заголовка #1 в мобайле */
 @media (max-width: 1040px) {
-  .head-h1, .head-h4, .head-h2 {
+  .head-h1, .head-h4, .head-h2, .promo-article__banner__title {
     font-size: 24px; 
   } 
 }
@@ -459,7 +455,7 @@ body,
 
 /* Размер шрифта заголовка #2 в мобайле */
 @media (max-width: 1040px) {
-  .promo-block__title, .article__question__title, .main-modal__logo, .main-modal__promo__text, .main-modal__list li, .main-modal__list li p {
+  .promo-block__title, .article__question__title, .main-modal__logo, .main-modal__promo__text, .main-modal__list li, .main-modal__list li p, .profile-promo__title {
     font-size: 18px;
   } 
 }
@@ -494,12 +490,40 @@ body,
 
 /* Размер шрифта текста #2 в мобайле */
 @media (max-width: 1040px) {
-  .quote-promo--article p, .promo-article__text p  {
+  .quote-promo--article p, .promo-article__text p,
+  .profile-promo__description,
+  .profile-promo__description p,
+  .profile-promo__more,
+  .quote-promo--article,
+  .promo-article__title,
+  .promo-article__time,
+  .promo-article__text,
+  .promo-article__info,
+  .promo-article__info__date,
+  .promo-article__tag__ul,
+  .promo-article__banner__description p,
+  .article__time,
+  .article__profile__title,
+  .article__list-question__name,
+  .article__list-question__text,
+  .article__tag__ul,
+  .promo-like,
+  .promo-question__label,
+  .tab-promo .nav-tabs,
+  .breadcrumb li a,
+  .main-modal__nav__text,
+  .favourite-side p {
     font-size: 14px !important;
   }
 }
 @media (max-width: 767px) {
-  .promo-article__profile__title, .article__content p, .article__text, .promo-result__item__text, .calendar-catalog__name {
+  .promo-article__profile__title, 
+  .article__content p, 
+  .article__text, 
+  .promo-result__item__text, 
+  .calendar-catalog__name,
+  .quote-promo--article p,
+  .promo-result__item__text {
     font-size: 14px;
   }
 }

@@ -410,6 +410,7 @@
 
   &__position {
     color: #00abe0;
+    font-weight: bold;
   }
 
   &__title {
@@ -454,6 +455,7 @@
   position: relative;
   padding: 16px 0;
   font-family: $verdana-italic;
+  font-style: italic;
   color: #464645;
 
   &:before {
@@ -1064,6 +1066,7 @@
       font-size: 12px;
       color: $color-promo;
       font-family: $verdana-bold;
+      font-weight: bold;
     }
   }
 

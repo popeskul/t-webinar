@@ -77,6 +77,10 @@
           padding-top: 37px;
         }
 
+        &__agree {
+          color: white;
+        }
+
         .btn {
           min-width: 256px;
           padding-top: 14px;
@@ -197,10 +201,7 @@
             }
 
             @media(max-width: $screen-sm){
-              //right: 275px;
-              @media(max-width: $screen-sm){
-                right: 88%;
-              }
+              right: 88%;
             }
           }
         }

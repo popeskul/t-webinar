@@ -19,15 +19,12 @@ button {
   }
 
   &__promo {
-    background-color: $color-bright;
-    color: white;
     font-family: $trebuchet-bd;
     padding: 13px 25px 15px 25px;
     font-size: 16px;
     border-radius: 30px;
     min-width: 220px;
     font-weight: bold;
-    box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.5);
     @include transition(all .2s ease-in-out);
 
     @media (max-width: $screen-md){
@@ -42,10 +39,22 @@ button {
 
     &:hover, &:focus {
       opacity: 1;
-      background: $color-bright;
-      box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.7);
-      color: white;
+      // background: $color-bright;
+      // box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.7);
+      // color: white;
       text-decoration: none;
+    }
+
+    &--danger {
+      background-color: $color-bright;
+      color: white;
+      box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.5);
+
+      &:hover, &:focus {
+        background: $color-bright;
+        box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.7);
+        color: white;
+      }
     }
 
     &--clear {
@@ -76,6 +85,8 @@ button {
 
       &:hover, &:focus {
         box-shadow: none;
+        background-color: $color-bright;
+        color: white;
       }
     }
   }

@@ -6512,15 +6512,12 @@ button {
     box-shadow: none;
     outline: 0px; }
   .btn__promo {
-    background-color: #f91c42;
-    color: white;
     font-family: "trebuch-bd", Arial, Helvetica, sans-serif;
     padding: 13px 25px 15px 25px;
     font-size: 16px;
     border-radius: 30px;
     min-width: 220px;
     font-weight: bold;
-    box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.5);
     transition: all 0.2s ease-in-out; }
     @media (max-width: 1040px) {
       .btn__promo {
@@ -6532,10 +6529,15 @@ button {
         padding: 14px 15px 11px 15px; } }
     .btn__promo:hover, .btn__promo:focus {
       opacity: 1;
-      background: #f91c42;
-      box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.7);
-      color: white;
       text-decoration: none; }
+    .btn__promo--danger {
+      background-color: #f91c42;
+      color: white;
+      box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.5); }
+      .btn__promo--danger:hover, .btn__promo--danger:focus {
+        background: #f91c42;
+        box-shadow: 0 6px 10px 0 rgba(249, 28, 66, 0.7);
+        color: white; }
     .btn__promo--clear {
       background-color: #ffffff;
       color: #00abe0; }
@@ -6554,7 +6556,9 @@ button {
       box-shadow: inset 0px 0px 0px 2px #979797;
       color: #979797; }
       .btn__promo--border:hover, .btn__promo--border:focus {
-        box-shadow: none; }
+        box-shadow: none;
+        background-color: #f91c42;
+        color: white; }
 
 .bootstrap-select {
   border-radius: 0px;
@@ -6805,7 +6809,7 @@ input {
   .promo-label__icon {
     display: none;
     position: absolute;
-    top: 0;
+    top: -7px;
     left: 2px;
     width: 26px;
     height: 26px; }
@@ -7711,13 +7715,13 @@ input {
           line-height: 24px;
           margin-bottom: 6px; } }
     .footer__description__sub {
-      font-size: 14px !important;
+      font-size: 14px;
       line-height: 22px;
       font-family: "Verdana";
       margin-bottom: 17px; }
       @media (max-width: 767px) {
         .footer__description__sub {
-          font-size: 12px !important;
+          font-size: 12px;
           margin-bottom: 15px; } }
     .footer__description p {
       margin-bottom: 17px;
@@ -8106,7 +8110,8 @@ input {
     .profile-promo__description .profile-promo__position {
       margin-bottom: 9px; }
   .profile-promo__position {
-    color: #00abe0; }
+    color: #00abe0;
+    font-weight: bold; }
   .profile-promo__title {
     margin-bottom: 5px; }
     @media (max-width: 767px) {
@@ -8137,6 +8142,7 @@ input {
   position: relative;
   padding: 16px 0;
   font-family: "Verdana-Italic";
+  font-style: italic;
   color: #464645; }
   .quote-promo:before {
     content: "";
@@ -8589,7 +8595,8 @@ input {
   .promo-article__profile__position {
     font-size: 12px;
     color: #00abe0;
-    font-family: "Verdana-Bold"; }
+    font-family: "Verdana-Bold";
+    font-weight: bold; }
 
 .promo-article__more {
   text-align: center; }
@@ -10038,6 +10045,8 @@ input {
     @media (max-width: 1040px) {
       .modal--simple .modal__button {
         padding-top: 37px; } }
+    .modal--simple .modal__button__agree {
+      color: white; }
     .modal--simple .modal__button .btn {
       min-width: 256px;
       padding-top: 14px;
@@ -10113,10 +10122,9 @@ input {
   @media (max-width: 1040px) {
     .modal--side.fade.in .modal__close {
       right: 310px; } }
-
-@media (max-width: 767px) and (max-width: 767px) {
-  .modal--side.fade.in .modal__close {
-    right: 88%; } }
+  @media (max-width: 767px) {
+    .modal--side.fade.in .modal__close {
+      right: 88%; } }
 
 .main-modal {
   position: fixed;

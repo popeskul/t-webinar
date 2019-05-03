@@ -107,13 +107,13 @@
     }
 
     &__sub {
-      font-size: 14px !important;
+      font-size: 14px;
       line-height: 22px;
       font-family: $verdana;
       margin-bottom: 17px;
 
       @media(max-width: $screen-sm) {
-        font-size: 12px !important;
+        font-size: 12px;
         margin-bottom: 15px;
       }
     }
