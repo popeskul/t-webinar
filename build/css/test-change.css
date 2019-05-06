@@ -512,7 +512,9 @@ body,
   .tab-promo .nav-tabs,
   .breadcrumb li a,
   .main-modal__nav__text,
-  .favourite-side p {
+  .favourite-side p,
+  .tab-promo .tab-content p,
+  .article__content p {
     font-size: 14px !important;
   }
 }
