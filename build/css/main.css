@@ -8111,7 +8111,7 @@ input {
       margin-bottom: 9px; }
   .profile-promo__position {
     color: #00abe0;
-    font-weight: bold; }
+    font-family: 'Verdana-Bold'; }
   .profile-promo__title {
     margin-bottom: 5px; }
     @media (max-width: 767px) {
