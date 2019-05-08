@@ -381,7 +381,10 @@ body,
   .article__tag__ul,
   .promo-like,
   .promo-article__wrapper--many .promo-article__profile__title,
-  .favourite-side p {
+  .favourite-side p,
+  .tab-promo .tab-content p,
+  .promo-block__description p,
+  .article__content p {
     font-size: 14px;
   }
 }

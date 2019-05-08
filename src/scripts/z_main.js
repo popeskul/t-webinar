@@ -104,7 +104,9 @@ jQuery(document).ready(function($){
     });
 });
 
-var ps = new PerfectScrollbar('.scrollbar');
+$(document).ready(function() {
+    var ps = new PerfectScrollbar('.scrollbar');
+});
 
 function buttonUp(){
     var valux = $('.sb-search-input').val();
