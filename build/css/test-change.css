@@ -384,7 +384,8 @@ body,
   .favourite-side p,
   .tab-promo .tab-content p,
   .promo-block__description p,
-  .article__content p {
+  .article__content p,
+  .modal-content p {
     font-size: 14px;
   }
 }
@@ -517,7 +518,8 @@ body,
   .main-modal__nav__text,
   .favourite-side p,
   .tab-promo .tab-content p,
-  .article__content p {
+  .article__content p,
+  .modal-content p {
     font-size: 14px !important;
   }
 }
