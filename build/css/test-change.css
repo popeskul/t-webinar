@@ -283,6 +283,7 @@ body,
 
 
 
+
 /* Меняется размер шрифта по умолчанию 24px для: */
 @media(min-width: 1050px) {
   .head-h3,
@@ -310,13 +311,13 @@ body,
 
 
 
+
 /* Меняется размер шрифта кнопки по умолчанию 16px. Красная кнопка и кнопка без фона. */
 @media(min-width: 1050px) {
   .btn__promo {
     font-size: 16px;
   }
 }
-
 
 
 
@@ -348,7 +349,6 @@ body,
     font-size: 16px;
   }
 }
-
 
 
 
@@ -418,6 +418,8 @@ body,
 
 
 
+
+
 /* Стиль заголовков */
 .tab-promo__top__title,
 .tab-content__title,
@@ -428,7 +430,7 @@ body,
 .promo-article__profile__position,
 .article__title,
 .profile-promo__title,
-.profile-promo__position
+.profile-promo__position,
 .article__pormo-img__title,
 .header__description .head-h1,
 .modal__title,
@@ -437,7 +439,7 @@ body,
 .favourite-side__item__title .head-h3,
 .promo-article__banner__title,
 .footer__description .head-h3 {
-  font-family: "trebucbd", Arial, Helvetica, sans-serif;
+  font-family: "trebucbd", Arial, Helvetica, sans-serif !important;
 }
 
 
@@ -450,8 +452,6 @@ body,
     font-size: 24px; 
   } 
 }
-
-
 
 
 
@@ -475,18 +475,12 @@ body,
 
 
 
-
-
-
 /* Размер шрифта текста #1 в мобайле */
 @media (max-width: 1040px) {
   .main-modal__medicina p, .main-modal__info p, .main-modal__feature p {
     font-size: 16px;
   } 
 }
-
-
-
 
 
 
@@ -521,9 +515,11 @@ body,
   .article__content p,
   .modal-content p {
     font-size: 14px !important;
+    background: red;
   }
 }
 @media (max-width: 767px) {
+  .promo-article__wrapper--many .promo-article__profile__title, 
   .promo-article__profile__title, 
   .article__content p, 
   .article__text, 
@@ -532,11 +528,9 @@ body,
   .quote-promo--article p,
   .promo-result__item__text {
     font-size: 14px;
+    background: red;
   }
 }
-
-
-
 
 
 
@@ -544,12 +538,36 @@ body,
 
 /* Размер шрифта текста #3 в мобайле */
 @media (max-width: 1040px) {
-  .promo-label span, .header__description p, .promo-banner__btn__group a, .favourite-side--guide .modal__title {
-    font-size: 12px;
+  .promo-label span, 
+  .header__description, 
+  .header__description p, 
+  .promo-banner__btn__group a,
+  .footer__description__sub, 
+  .footer__main p, 
+  .footer ul a,
+  .footer__list a,
+  .promo-article__delete,
+  .promo-article__notify, 
+  .promo-article__profile__position,
+  .promo-article__banner__footer p,
+  .promo-progress__promo,
+  .article__notify,
+  .article__info,
+  .article__list-question__favourite,
+  .promo-result__item__notify,
+  .promo-result__item__time,
+  .favourite-side--guide .modal__title,
+  .modal__title  {
+    font-size: 12px !important;
   }
 }
 @media (max-width: 767px) {
-  .footer__description__sub, .promo-banner__btn__group a, .promo-result__more .btn {
+  .footer__description__sub, 
+  .promo-banner__btn__group a, 
+  .promo-result__more .btn,
+  .footer__description p,
+  .calendar-catalog__gmt,
+  .main-modal__literature p {
     font-size: 12px !important;
   }
 }
@@ -558,11 +576,11 @@ body,
 
 
 
-
-
 /* Размер шрифта текста #4 в мобайле */
 @media (max-width: 767px) {
-  .promo-article__profile__description > p, .promo-result__item__info {
+  .promo-article__profile__description > p, 
+  .tab-promo .tab-content .promo-article__profile__description > p,
+  .promo-result__item__info {
     font-size: 11px !important;
   }
 }
