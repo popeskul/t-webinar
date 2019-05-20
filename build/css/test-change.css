@@ -99,10 +99,23 @@ body {
 
 
 /* Цвет заголовков */
-.color--main, .head-h1, .head-h2, .head-h3, .promo-article__item__title a,
+.color--main, 
+.head-h1, 
+.head-h2, 
+.head-h3, 
+.promo-article__item__title a,
 .promo-article__profile__title,
 .main-modal__promo__text,
-.main-modal__chart__title {
+.main-modal__content u, 
+.main-modal__chart__title,
+.main-modal__list li,
+.main-modal__list li p,
+.main-modal__feature p,
+.modal__promo__text,
+.percent-circle--cabinet:after,
+.percent-circle--middle:after,
+.article__profile__title,
+.promo-progress__promo {
   color: #002b45;
 }
 
@@ -117,7 +130,9 @@ body,
 .profile-promo__description,
 .promo-like__group .promo-like__num,
 .tab-promo .nav-tabs li.active a,
-.tab-promo .nav-tabs li a  {
+.tab-promo .nav-tabs li.active a:hover, 
+.tab-promo .nav-tabs li.active a:focus, 
+.tab-promo .nav-tabs li a {
   color: #001625;
 }
 
@@ -126,8 +141,17 @@ body,
 
 
 /* Цвет второстепенного текста */
-.footer p, .footer ul a, .quote-promo, .promo-article__info, .promo-article__banner__footer p,
-.breadcrumb li, .breadcrumb li a, .breadcrumb li.active, .promo-article__info__date {
+.footer p, 
+.footer ul a, 
+.quote-promo, 
+.promo-article__info, 
+.promo-article__info__date,
+.promo-article__banner__footer p,
+.breadcrumb li, 
+.breadcrumb li a, 
+.breadcrumb li.active, 
+.profile-promo__more,
+.profile-promo__more:hover, .profile-promo__more:focus {
   color: #464645;
 }
 
@@ -145,8 +169,8 @@ body,
 
 
 /* Цвет текста на активной кнопке */
-.btn__promo--simple, .btn__promo--simple:hover, .btn__promo--simple:focus {
-  color: #464645;
+.btn__promo--danger, .btn__promo--danger:hover, .btn__promo--danger:focus {
+  color: white;
 }
 
 
@@ -158,7 +182,10 @@ body,
   box-shadow: inset 0px 0px 0px 2px #979797;
   color: #979797;
 }
-
+.btn__promo--border:hover,
+.btn__promo--border:focus {
+  color: white;
+}
 
 
 
@@ -168,7 +195,6 @@ body,
 .logo {
   background-image: url(../img/logo@2x.png);
 }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
   .logo {
     background-image: url(../img/logo@2x.png);
@@ -220,21 +246,22 @@ body,
 
 
 
-
+/* Шрифты заголовков (TrebuchetMS-Bold по умолчанию) */
 /* Меняется шрифт по умолчанию «Verdana» на всех текстовых блоках сайта. */
 body,
 .footer__description__sub,
 .footer__list a,
-.profile-promo__more,
+.profile-promo__more, 
+.profile-promo__position, 
+.promo-article__profile__position, 
 .quote-promo,
 .quote-promo--article,
-.promo-article__profile__position,
 .tab-promo .nav-tabs,
 .breadcrumb,
 .main-modal__logo,
 .main-modal__content u,
 .main-modal__footer__main u {
-	font-family: 'Verdana';
+  font-family: 'Verdana';
 }
 
 @font-face {
@@ -260,7 +287,7 @@ body,
 
 
 
-
+/* Размер шрифта подзаголовка сайта */
 /* Меняется размер шрифта по умолчанию 16px для подзаголовка. */
 @media(min-width: 1050px) {
   .header__description p {
@@ -271,11 +298,11 @@ body,
 
 
 
+/* Размер шрифта заголовка #1 */
 /* Меняется размер шрифта по умолчанию 36px для: */
 @media(min-width: 1050px) {
   .head-h2,
-  .simple-circle,
-  .promo-article__banner__info {
+  .simple-circle {
     font-size: 36px;
   }
 }
@@ -283,7 +310,7 @@ body,
 
 
 
-
+/* Размер шрифта заголовка #2 */
 /* Меняется размер шрифта по умолчанию 24px для: */
 @media(min-width: 1050px) {
   .head-h3,
@@ -296,7 +323,7 @@ body,
 
 
 
-
+/* Размер шрифта заголовков #3 */
 /* Меняется размер шрифта по умолчанию 18px для: */
 @media(min-width: 1050px) {
   .scrollbar__title,
@@ -315,14 +342,14 @@ body,
 /* Меняется размер шрифта кнопки по умолчанию 16px. Красная кнопка и кнопка без фона. */
 @media(min-width: 1050px) {
   .btn__promo {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
 
 
 
-
+/* Размер шрифта текста #1 */
 /* Меняет все шрифты сайта размером 16px. */
 @media(min-width: 1050px) {
   .btn__promo,
@@ -353,38 +380,43 @@ body,
 
 
 
-
+/* Размер шрифта текста #2 */
 /* Меняет все шрифты сайта размером 14px. */
 @media(min-width: 1050px) {
+  body, 
   .breadcrumb li a,
   .breadcrumb li,
   .promo-banner__name,
-  .favourite-side--login p,
+  .footer ul, 
   .footer__description__sub,
-  .tab-promo .nav-tabs,
   .main-modal__nav__text,
   .promo-banner__btn__group a,
+  .profile-promo__description, 
   .profile-promo__description p,
   .profile-promo__more,
   .quote-promo--article,
   .promo-article__wrapper--many .promo-article__title,
-  .promo-article__wrapper--many .promo-.article__profile__title,
+  .promo-article__wrapper--many .promo-article__profile__title, 
+  .article__time,
+  .article__list-question__name,
+  .article__list-question__text,
+  .article__tag__ul,
+  .article__profile__title,
+  .promo-article__title, 
+  .promo-article__profile__title,
   .promo-article__time,
   .promo-article__text,
   .promo-article__info,
   .promo-article__info__date,
   .promo-article__tag__ul,
-  .promo-article__banner__description p,
-  .article__time,
-  .article__list-question__name,
-  .article__list-question__text,
-  .article__tag__ul,
+  .promo-article__banner__description p, 
+  .promo-question__label,
   .promo-like,
-  .promo-article__wrapper--many .promo-article__profile__title,
   .favourite-side p,
+  .favourite-side--login p,
+  .tab-promo .nav-tabs,
   .tab-promo .tab-content p,
   .promo-block__description p,
-  .article__content p,
   .modal-content p {
     font-size: 14px;
   }
@@ -393,11 +425,11 @@ body,
 
 
 
-
+/* Размер шрифта текста #3 */
 /* Меняет все шрифты сайта размером 12px. */
 @media(min-width: 1050px) {
-  .footer__main p,
-  .footer__description p,
+  .footer__main p, 
+  .footer__description p, 
   .footer ul a,
   .footer__list a,
   .promo-article__delete,
@@ -410,8 +442,7 @@ body,
   .article__list-question__favourite,
   .promo-result__item__notify,
   .promo-result__item__time,
-  .favourite-side--guide .modal__title,
-  .promo-label span {
+  .favourite-side--guide .modal__title {
     font-size: 12px;
   }
 }
@@ -439,7 +470,7 @@ body,
 .favourite-side__item__title .head-h3,
 .promo-article__banner__title,
 .footer__description .head-h3 {
-  font-family: "trebucbd", Arial, Helvetica, sans-serif !important;
+  /* font-family: "trebucbd", Arial, Helvetica, sans-serif !important; */
 }
 
 
@@ -447,9 +478,13 @@ body,
 
 
 /* Стили шрифтов Мобайл заголовка #1 в мобайле */
+/* Меняется размер шрифта по умолчанию 24px */
 @media (max-width: 1040px) {
-  .head-h1, .head-h4, .head-h2, .promo-article__banner__title {
-    font-size: 24px; 
+  .head-h1, 
+  .head-h4, 
+  .head-h2, 
+  .promo-article__banner__title {
+    font-size: 24px;
   } 
 }
 
@@ -458,6 +493,7 @@ body,
 
 
 /* Размер шрифта заголовка #2 в мобайле */
+/* Меняется размер шрифта по умолчанию 18px */
 @media (max-width: 1040px) {
   .promo-block__title, .article__question__title, .main-modal__logo, .main-modal__promo__text, .main-modal__list li, .main-modal__list li p, .profile-promo__title {
     font-size: 18px;
@@ -476,8 +512,11 @@ body,
 
 
 /* Размер шрифта текста #1 в мобайле */
+/* Меняет все шрифты сайта размером 16px */
 @media (max-width: 1040px) {
-  .main-modal__medicina p, .main-modal__info p, .main-modal__feature p {
+  .main-modal__medicina p, 
+  .main-modal__info p, 
+  .main-modal__feature p {
     font-size: 16px;
   } 
 }
@@ -487,8 +526,9 @@ body,
 
 
 /* Размер шрифта текста #2 в мобайле */
+/* Меняет все шрифты сайта размером 14px */
 @media (max-width: 1040px) {
-  .quote-promo--article p, .promo-article__text p,
+  .quote-promo--article p, 
   .profile-promo__description,
   .profile-promo__description p,
   .profile-promo__more,
@@ -496,6 +536,7 @@ body,
   .promo-article__title,
   .promo-article__time,
   .promo-article__text,
+  .promo-article__text p,
   .promo-article__info,
   .promo-article__info__date,
   .promo-article__tag__ul,
@@ -515,12 +556,10 @@ body,
   .article__content p,
   .modal-content p {
     font-size: 14px !important;
-    background: red;
   }
 }
 @media (max-width: 767px) {
   .promo-article__wrapper--many .promo-article__profile__title, 
-  .promo-article__profile__title, 
   .article__content p, 
   .article__text, 
   .promo-result__item__text, 
@@ -528,7 +567,6 @@ body,
   .quote-promo--article p,
   .promo-result__item__text {
     font-size: 14px;
-    background: red;
   }
 }
 
@@ -556,8 +594,7 @@ body,
   .article__list-question__favourite,
   .promo-result__item__notify,
   .promo-result__item__time,
-  .favourite-side--guide .modal__title,
-  .modal__title  {
+  .favourite-side--guide .modal__title {
     font-size: 12px !important;
   }
 }
