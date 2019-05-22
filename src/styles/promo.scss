@@ -367,7 +367,7 @@
       display: block;
       margin: 0 auto;
       margin-top: 35px;
-      margin-bottom: 21px;
+      margin-bottom: 20px;
     }
 
     img {
@@ -417,7 +417,7 @@
     margin-bottom: 5px;
 
     @media(max-width: $screen-sm) {
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
   }
 
@@ -635,12 +635,13 @@
             margin-top: 8px;
 
             p {
-              margin-top: 7px;
+              margin-top: 9px;
             }
           }
           &__title {
             font-size: 14px;
             line-height: 20px;
+            margin-bottom: 2px;
           }
         }
       }
@@ -800,17 +801,13 @@
     top: 10px;
     right: 9px;
     background: rgba(0, 0, 0, 0.2);
-    // height: 25px;
     font-size: 14px;
     padding: 4px 7px 4px 8px;
     color: white;
     z-index: 1;
-    letter-spacing: 1px;
 
     @media(max-width: $screen-sm) {
-      // font-size: 10px;
-      // padding: 5px 5px 4px 8px;
-      // letter-spacing: 0.2px;
+      right: 5px;
     }
 
     img, svg {
@@ -955,10 +952,10 @@
 
     &__date {
       display: inline-block;
-      padding-top: 2px;
+      // padding-top: 2px;
       font-size: 14px;
       color: #464645;
-      margin-top: -2px;
+      margin-top: -1px;
       // text-transform: uppercase;
 
       @media(max-width: $screen-md) {
@@ -987,7 +984,7 @@
       li {
         display: flex;
         align-items: center;
-        margin-right: 25px;
+        margin-right: 23px;
 
         &:last-child {
           margin-right: 0;
@@ -997,7 +994,7 @@
       img, svg {
         // vertical-align: top;
         fill: $color-promo;
-        margin-right: 12px;
+        margin-right: 10px;
         width: 20px;
         height: 20px;
       }
@@ -1116,9 +1113,32 @@
 
   &__banner {
     display: flex;
-    // height: 100%;
-    padding: 18px 0px 18px 0px;
-    box-shadow: 0px 30px 20px -30px rgba(0, 0, 0, 0.2), 0px -30px 20px -30px rgba(0, 0, 0, 0.2);
+    padding: 21px 0px 18px 0px;
+    // box-shadow: 0px 30px 20px -30px rgba(0, 0, 0, 0.2), 0px -30px 20px -30px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      background-image: url(../img/shadow.png);
+      background-repeat: no-repeat;
+      height: 40px;
+      width: 100%;
+      background-size: contain;
+    }
+
+    &:before {
+      top: -42px;
+      background-position: bottom center;
+      transform: scale(-1);
+    }
+
+    &:after {
+      bottom: -50px;
+      background-position: top center;
+    }
 
     @media(max-width: $screen-md) {
       padding-top: 22px;
@@ -1139,13 +1159,17 @@
       color: #00abe0;
       font-size: 36px;
       text-align: center;
+
+      @media(max-width: $screen-sm) {
+        margin-right: 18px;
+      }
     }
     &__description {
       flex: 1;
       display: flex;
       flex-direction: column;
       min-height: 379px;
-      padding-top: 8px;
+      padding-top: 7px;
 
       @media(max-width: $screen-md) {
       }
@@ -1177,6 +1201,8 @@
       }
     }
     &__footer {
+      margin-top: 44px;
+
       @media(max-width: $screen-md) {
 
       }
@@ -1188,6 +1214,7 @@
         margin: 0;
         color: #464645;
         font-size: 12px;
+        line-height: 18px;
 
         @media(max-width: $screen-md) {
           line-height: 18px;
@@ -1586,7 +1613,7 @@
     // height: 25px;
     font-size: 14px;
     line-height: 22px;
-    padding: 0px 5px 4px 5px;
+    padding: 2px 5px 1px 5px;
     color: white;
     z-index: 1;
     letter-spacing: 1px;
@@ -1602,7 +1629,7 @@
     img, svg {
       width: 18px;
       height: 8px;
-      margin-right: 4px;
+      margin-right: 0px;
       fill: $color-promo;
     }
   }
@@ -1687,7 +1714,7 @@
         // margin-bottom: 18px;
         @media(max-width: $screen-sm) {
           margin-left: -60px;
-          margin-top: -7px;
+          margin-top: -6px;
         }
       }
     }
@@ -1771,7 +1798,7 @@
     @media(max-width: $screen-sm) {
       border-top: 2px solid #eaeaea;
       margin-left: -20px;
-      padding-left: 20px;
+      padding-left: 23px;
       margin-right: -20px;
       padding-right: 20px;
       padding-top: 11px;

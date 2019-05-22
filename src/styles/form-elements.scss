@@ -148,7 +148,7 @@ input {
 .promo-label {
   position: relative;
   display: inline-block;
-  padding-top: 2px;
+  padding-top: 0px;
   padding-left: 31px;
   min-height: 20px;
   font-weight: 400;
@@ -161,9 +161,9 @@ input {
 
   input[type="checkbox"]{
     position: absolute;
-    transform: translate(0%, -50%);
-    top: 50%;
-    //top: 0;
+    // transform: translate(0%, -50%);
+    // top: 50%;
+    top: 0;
     left: 0;
     -webkit-appearance: none;
     width: 20px;
