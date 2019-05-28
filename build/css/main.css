@@ -9466,6 +9466,7 @@ input {
     .tab-promo {
       margin-bottom: 40px; } }
   .tab-promo__top {
+    position: relative;
     background-color: white;
     z-index: 2;
     border-bottom: 2px solid #eaeaea; }

@@ -9,7 +9,7 @@
   <link href="css/main.css?v1" rel="stylesheet">
   <link rel="stylesheet" href="css/test-change.css?v1">
 </head>
-<body class="">
+<body data-spy="scroll" data-target="#myTabNavigation">
 <main id="panel-body">
   <div class="header">
     <div class="header__container">
@@ -29,25 +29,25 @@
 
   <div class="content">
     <div class="tab-promo tab-promo--catalog">
-      <div class="tab-promo__top" id="myTabNavigation">
+      <div class="tab-promo__top" id="myTabNavigation" data-spy="affix">
         <div class="content__container">
           <div class="tab-promo__top__container">
             <div class="head-h3 tab-promo__top__title">Слушаем и слышим</div>
 
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Тест-вебинары</a>
+            <ul class="nav nav-tabs">
+              <li>
+                <a href="#test-webinar">Тест-вебинары</a>
               </li>
-              <li role="presentation">
-                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Вебинары</a>
+              <li>
+                <a href="#webinar">Вебинары</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">
+      <div class="tab-content" id="test-webinar">
+        <div role="tabpanel" class="tab-pane active">
           <div class="content__container">
             <div class="head-h2 tab-content__title">Вебинары от ведущих экспертов</div>
             <br>
@@ -302,11 +302,6 @@
                 <a href="#" class="btn btn__promo btn__promo--danger">Показать еще</a>
               </div>
             </div>
-          </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="profile">
-          <div class="content__container">
-
           </div>
         </div>
       </div>

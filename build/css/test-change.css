@@ -253,7 +253,6 @@ body,
 .footer__list a,
 .profile-promo__more, 
 .profile-promo__position, 
-.promo-article__profile__position, 
 .quote-promo,
 .quote-promo--article,
 .tab-promo .nav-tabs,
@@ -262,6 +261,10 @@ body,
 .main-modal__content u,
 .main-modal__footer__main u {
   font-family: 'Verdana';
+}
+/* Здесь меняется жирность */
+.promo-article__profile__position {
+  font-family: "Verdana-Bold";
 }
 
 @font-face {
@@ -433,6 +436,7 @@ body,
   .promo-article__delete,
   .promo-article__notify,
   .promo-article__profile__description > p,
+  .tab-promo .tab-content .promo-article__profile__description > p,
   .promo-article__profile__position,
   .promo-article__banner__footer p,
   .promo-progress__promo,

@@ -9,7 +9,7 @@
   <link href="css/main.css?v1" rel="stylesheet">
   <link rel="stylesheet" href="css/test-change.css?v1">
 </head>
-<body class="">
+<body data-spy="scroll" data-target="#myTabNavigation">
 <main id="panel-body">
   <div class="header">
     <div class="header__container">
@@ -29,24 +29,24 @@
 
   <div class="content">
     <div class="tab-promo">
-      <div class="tab-promo__top" id="myTabNavigation">
+      <div class="tab-promo__top" id="myTabNavigation" data-spy="affix">
         <div class="content__container">
           <div class="tab-promo__top__container">
             <div class="head-h3 tab-promo__top__title">Слушаем и слышим</div>
 
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Тест-вебинары</a>
+            <ul class="nav nav-tabs">
+              <li class="">
+                <a href="#test-webinar">Тест-вебинары</a>
               </li>
-              <li role="presentation">
-                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Вебинары</a>
+              <li>
+                <a href="#webinar">Вебинары</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="tab-content">
+      <div class="tab-content" id="test-webinar">
         <div role="tabpanel" class="tab-pane active" id="home">
           <div class="content__container">
             <div class="head-h2 tab-content__title">Вебинары от ведущих экспертов</div>
@@ -195,7 +195,7 @@
     </div>
 
     <div class="content__container">
-      <div class="promo-block">
+      <div class="promo-block" id="webinar">
         <div class="promo-block__description">
           <div class="head-h3 promo-block__title">Тест-вебинары</div>
           <p>Сокращенная версия вебинара с возможностью проверить себя.</p>
