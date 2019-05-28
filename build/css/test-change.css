@@ -250,20 +250,20 @@ body,
 /* Меняется шрифт по умолчанию «Verdana» на всех текстовых блоках сайта. */
 body,
 .footer__description__sub,
-.footer__list a,
-.profile-promo__more, 
-.profile-promo__position, 
+.profile-promo__more,  
 .quote-promo,
 .quote-promo--article,
 .tab-promo .nav-tabs,
 .breadcrumb,
-.main-modal__logo,
 .main-modal__content u,
 .main-modal__footer__main u {
   font-family: 'Verdana';
 }
 /* Здесь меняется жирность */
-.promo-article__profile__position {
+.promo-article__profile__position,
+.profile-promo__position,
+.main-modal__logo,
+.footer__list a {
   font-family: "Verdana-Bold";
 }
 
